@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.2.24)  24 FEB 2025 11:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.2.24)  24 FEB 2025 11:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**c:/LaTex/Informes_LabAnalogica/main.tex
-(c:/LaTex/Informes_LabAnalogica/main.tex
+**c:/LaTex/Informes_LabAnalogica/Prueba_main1/main.tex
+(c:/LaTex/Informes_LabAnalogica/Prueba_main1/main.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -337,14 +337,14 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  11136 strings out of 473523
- 173643 string characters out of 5714630
- 580581 words of memory out of 5000000
+ 173773 string characters out of 5714630
+ 580604 words of memory out of 5000000
  34229 multiletter control sequences out of 15000+600000
  563901 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,79p,261b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,79p,274b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (2 pages, 83617 bytes).
+Output written on main.pdf (2 pages, 83791 bytes).
 PDF statistics:
  77 PDF objects out of 1000 (max. 8388607)
  12 named destinations out of 1000 (max. 500000)
