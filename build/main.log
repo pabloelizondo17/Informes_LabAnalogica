@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.2.24)  24 FEB 2025 11:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.2.24)  24 FEB 2025 11:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**c:/LaTex/Informes_LabAnalogica/main.tex
-(c:/LaTex/Informes_LabAnalogica/main.tex
+**c:/LaTex/Informes_LabAnalogica/build/main.tex
+(c:/LaTex/Informes_LabAnalogica/build/main.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -91,5 +91,4 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
 \macc@depth=\count278
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
-LaTeX Info: Redefining \smash on input line 939.
-L
+LaTeX Info: Redefining \smash on input
