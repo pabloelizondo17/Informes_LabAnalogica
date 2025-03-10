@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.2.24)  9 MAR 2025 20:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.2.24)  9 MAR 2025 20:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1063,8 +1063,8 @@ LaTeX Font Info:    Trying to load font information for T1+phv on input line 34.
 (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 ) (Informe_Lab2.aux
-LaTeX Info: Redefining \. on input line 28.
-LaTeX Info: Redefining \% on input line 28.
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
 )
 \openout1 = `Informe_Lab2.aux'.
 
@@ -1233,87 +1233,66 @@ LaTeX Font Info:    Trying to load font information for U+trsy on input line 79.
  (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/trsym\utrsy.fd
 File: utrsy.fd 2000/06/25v1.0transformation symbol font definitions
 )
-
-! LaTeX Error: File `circuito_1' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.90 	\includegraphics[width=2.5in]{circuito_1}
-                                               
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<./fig/circuito_1.pdf, id=75, 182.43758pt x 125.37439pt>
+File: ./fig/circuito_1.pdf Graphic file (type pdf)
+<use ./fig/circuito_1.pdf>
+Package pdftex.def Info: ./fig/circuito_1.pdf  used on input line 90.
+(pdftex.def)             Requested size: 180.67499pt x 124.17267pt.
+<./fig/circuito_2.pdf, id=76, 181.44086pt x 125.37439pt>
+File: ./fig/circuito_2.pdf Graphic file (type pdf)
+<use ./fig/circuito_2.pdf>
+Package pdftex.def Info: ./fig/circuito_2.pdf  used on input line 97.
+(pdftex.def)             Requested size: 180.67499pt x 124.84605pt.
 
 
-! LaTeX Error: File `circuito_2' not found.
+<./fig/plot4.png, id=79, 536.75531pt x 335.00156pt>
+File: ./fig/plot4.png Graphic file (type png)
+<use ./fig/plot4.png>
+Package pdftex.def Info: ./fig/plot4.png  used on input line 112.
+(pdftex.def)             Requested size: 267.39877pt x 166.88695pt.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.97 	\includegraphics[width=2.5in]{circuito_2}
-                                               
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (23.15678pt too wide) in paragraph at lines 112--113
+ [][] 
+ []
 
+File: ./fig/plot4.png Graphic file (type png)
+<use ./fig/plot4.png>
+Package pdftex.def Info: ./fig/plot4.png  used on input line 119.
+(pdftex.def)             Requested size: 267.39877pt x 166.88695pt.
 
-! LaTeX Error: File `plot4' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.112 \includegraphics[width=3.7in]{plot4}
-                                          
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `plot4' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.119 \includegraphics[width=3.7in]{plot4}
-                                          
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (23.15678pt too wide) in paragraph at lines 119--120
+ [][] 
+ []
 
 
 
-
-LaTeX Warning: Citation 'Malik1996' on page 1 undefined on input line 148.
-
-
-LaTeX Warning: Citation 'Boylestad' on page 1 undefined on input line 148.
+[1{C:/Users/pablo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
-LaTeX Warning: Citation 'Horowitz1989' on page 1 undefined on input line 148.
+ <./fig/circuito_1.pdf> <./fig/circuito_2.pdf> <./fig/plot4.png (PNG copy)>]
+
+LaTeX Warning: Citation 'Malik1996' on page 2 undefined on input line 148.
 
 
-LaTeX Warning: Citation 'Gray1995' on page 1 undefined on input line 148.
+LaTeX Warning: Citation 'Boylestad' on page 2 undefined on input line 148.
 
 
-LaTeX Warning: Citation 'Floyd2008' on page 1 undefined on input line 148.
+LaTeX Warning: Citation 'Horowitz1989' on page 2 undefined on input line 148.
 
 
-LaTeX Warning: Citation 'Behzad2013' on page 1 undefined on input line 148.
+LaTeX Warning: Citation 'Gray1995' on page 2 undefined on input line 148.
 
 
-LaTeX Warning: Citation 'Schilling1994' on page 1 undefined on input line 148.
+LaTeX Warning: Citation 'Floyd2008' on page 2 undefined on input line 148.
 
 
-LaTeX Warning: Citation 'Pierret1994' on page 1 undefined on input line 148.
+LaTeX Warning: Citation 'Behzad2013' on page 2 undefined on input line 148.
+
+
+LaTeX Warning: Citation 'Schilling1994' on page 2 undefined on input line 148.
+
+
+LaTeX Warning: Citation 'Pierret1994' on page 2 undefined on input line 148.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 148--149
@@ -1325,70 +1304,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
+<./fig/circuito_3.pdf, id=147, 213.16338pt x 156.70946pt>
+File: ./fig/circuito_3.pdf Graphic file (type pdf)
+<use ./fig/circuito_3.pdf>
+Package pdftex.def Info: ./fig/circuito_3.pdf  used on input line 166.
+(pdftex.def)             Requested size: 216.81pt x 159.39436pt.
 
-! LaTeX Error: File `circuito_3' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.166 \includegraphics[width=3in]{circuito_3}
-                                             
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: Empty bibliography on input line 194.
 
+<./fig/cvjmv2.jpg, id=148, 1016.29688pt x 1227.08438pt>
+File: ./fig/cvjmv2.jpg Graphic file (type jpg)
+<use ./fig/cvjmv2.jpg>
+Package pdftex.def Info: ./fig/cvjmv2.jpg  used on input line 199.
+(pdftex.def)             Requested size: 75.8778pt x 91.61543pt.
 
+Overfull \hbox (3.60782pt too wide) in paragraph at lines 199--199
+ [][] 
+ []
 
-[1{C:/Users/pablo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
+File: ./fig/cvjmv2.jpg Graphic file (type jpg)
+<use ./fig/cvjmv2.jpg>
+Package pdftex.def Info: ./fig/cvjmv2.jpg  used on input line 199.
+(pdftex.def)             Requested size: 75.8778pt x 91.61543pt.
 
-
-]
-
-! LaTeX Error: File `cvjmv2' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.199 ...o]{cvjmv2}}]{José Miguel Barboza-Retana}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `cvjmv2' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.199 ...o]{cvjmv2}}]{José Miguel Barboza-Retana}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (3.60782pt too wide) in paragraph at lines 199--199
+ [][] 
+ []
 
 \tf@thm=\write6
 \openout6 = `Informe_Lab2.thm'.
 
 
 
-
-
-[2
-
-] (Informe_Lab2.aux
-LaTeX Info: Redefining \sptext on input line 28.
-LaTeX Info: Redefining \. on input line 28.
-LaTeX Info: Redefining \% on input line 28.
+[2 <./fig/circuito_3.pdf> <./fig/cvjmv2.jpg>] (Informe_Lab2.aux
+LaTeX Info: Redefining \sptext on input line 12.
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
 )
  ***********
 LaTeX2e <2024-11-01> patch level 2
@@ -1410,17 +1363,17 @@ Package logreq Info: Writing requests to 'Informe_Lab2.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37438 strings out of 473523
- 754540 string characters out of 5714630
- 1531080 words of memory out of 5000000
- 60103 multiletter control sequences out of 15000+600000
+ 37344 strings out of 473523
+ 753096 string characters out of 5714630
+ 1519080 words of memory out of 5000000
+ 60009 multiletter control sequences out of 15000+600000
  691269 words of font info for 162 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  99i,12n,101p,1252b,1828s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Informe_Lab2.pdf (2 pages, 109458 bytes).
+Output written on Informe_Lab2.pdf (2 pages, 730714 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
+ 214 PDF objects out of 1000 (max. 8388607)
  30 named destinations out of 1000 (max. 500000)
- 149 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 186 words of extra memory for PDF output out of 10000 (max. 10000000)
 
