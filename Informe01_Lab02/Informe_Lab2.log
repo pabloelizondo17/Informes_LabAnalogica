@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.2.24)  10 MAR 2025 22:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.2.24)  11 MAR 2025 14:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1290,94 +1290,143 @@ LaTeX Font Info:    Trying to load font information for U+trsy on input line 81.
 File: utrsy.fd 2000/06/25v1.0transformation symbol font definitions
 )
 
-<./fig/plot4.png, id=79, 536.75531pt x 335.00156pt>
-File: ./fig/plot4.png Graphic file (type png)
-<use ./fig/plot4.png>
-Package pdftex.def Info: ./fig/plot4.png  used on input line 172.
-(pdftex.def)             Requested size: 267.39877pt x 166.88695pt.
+<./fig/SignalSimulated_01.png, id=78, 247.689pt x 157.023pt>
+File: ./fig/SignalSimulated_01.png Graphic file (type png)
+<use ./fig/SignalSimulated_01.png>
+Package pdftex.def Info: ./fig/SignalSimulated_01.png  used on input line 165.
+(pdftex.def)             Requested size: 216.81pt x 137.44748pt.
+<./fig/SignalSimulated_02.png, id=83, 250.974pt x 158.0085pt>
+File: ./fig/SignalSimulated_02.png Graphic file (type png)
+<use ./fig/SignalSimulated_02.png>
+Package pdftex.def Info: ./fig/SignalSimulated_02.png  used on input line 174.
+(pdftex.def)             Requested size: 216.81pt x 136.50185pt.
 
-Overfull \hbox (23.15678pt too wide) in paragraph at lines 172--173
- [][] 
- []
-
-File: ./fig/plot4.png Graphic file (type png)
-<use ./fig/plot4.png>
-Package pdftex.def Info: ./fig/plot4.png  used on input line 179.
-(pdftex.def)             Requested size: 267.39877pt x 166.88695pt.
-
-Overfull \hbox (23.15678pt too wide) in paragraph at lines 179--180
- [][] 
- []
-
-
-LaTeX Warning: Reference `fig:poldiodo' on page 1 undefined on input line 184.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [1{C:/Users/pablo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
- <./fig/plot4.png (PNG copy)>]
-
-LaTeX Warning: Citation 'Malik1996' on page 2 undefined on input line 208.
-
-
-LaTeX Warning: Citation 'Boylestad' on page 2 undefined on input line 208.
-
-
-LaTeX Warning: Citation 'Horowitz1989' on page 2 undefined on input line 208.
-
-
-LaTeX Warning: Citation 'Gray1995' on page 2 undefined on input line 208.
-
-
-LaTeX Warning: Citation 'Floyd2008' on page 2 undefined on input line 208.
+ <./fig/SignalSimulated_01.png>]
+<./fig/SignalSimulated_03.png, id=106, 248.6745pt x 157.023pt>
+File: ./fig/SignalSimulated_03.png Graphic file (type png)
+<use ./fig/SignalSimulated_03.png>
+Package pdftex.def Info: ./fig/SignalSimulated_03.png  used on input line 183.
+(pdftex.def)             Requested size: 216.81pt x 136.9012pt.
+<./fig/SignalSimulated_04.png, id=108, 249.3315pt x 157.023pt>
+File: ./fig/SignalSimulated_04.png Graphic file (type png)
+<use ./fig/SignalSimulated_04.png>
+Package pdftex.def Info: ./fig/SignalSimulated_04.png  used on input line 192.
+(pdftex.def)             Requested size: 216.81pt x 136.5418pt.
 
 
-LaTeX Warning: Citation 'Behzad2013' on page 2 undefined on input line 208.
+<./fig/SignalSimulated_05.png, id=110, 246.9225pt x 241.50224pt>
+File: ./fig/SignalSimulated_05.png Graphic file (type png)
+<use ./fig/SignalSimulated_05.png>
+Package pdftex.def Info: ./fig/SignalSimulated_05.png  used on input line 202.
+(pdftex.def)             Requested size: 216.81pt x 212.04724pt.
+<./fig/SignalSimulated_06.png, id=111, 246.9225pt x 243.309pt>
+File: ./fig/SignalSimulated_06.png Graphic file (type png)
+<use ./fig/SignalSimulated_06.png>
+Package pdftex.def Info: ./fig/SignalSimulated_06.png  used on input line 209.
+(pdftex.def)             Requested size: 216.81pt x 213.63365pt.
+<./fig/SignalSimulated_07.png, id=112, 260.172pt x 254.75175pt>
+File: ./fig/SignalSimulated_07.png Graphic file (type png)
+<use ./fig/SignalSimulated_07.png>
+Package pdftex.def Info: ./fig/SignalSimulated_07.png  used on input line 216.
+(pdftex.def)             Requested size: 216.81pt x 212.30295pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-LaTeX Warning: Citation 'Schilling1994' on page 2 undefined on input line 208.
+
+[2 <./fig/SignalSimulated_02.png> <./fig/SignalSimulated_03.png> <./fig/SignalSimulated_04.png> <./fig/SignalSimulated_05.png> <./fig/SignalSimulated_06.png>]
+<./fig/plot4.png, id=128, 536.75531pt x 335.00156pt>
+File: ./fig/plot4.png Graphic file (type png)
+<use ./fig/plot4.png>
+Package pdftex.def Info: ./fig/plot4.png  used on input line 227.
+(pdftex.def)             Requested size: 267.39877pt x 166.88695pt.
+
+Overfull \hbox (23.15678pt too wide) in paragraph at lines 227--228
+ [][] 
+ []
+
+File: ./fig/plot4.png Graphic file (type png)
+<use ./fig/plot4.png>
+Package pdftex.def Info: ./fig/plot4.png  used on input line 234.
+(pdftex.def)             Requested size: 267.39877pt x 166.88695pt.
+
+Overfull \hbox (23.15678pt too wide) in paragraph at lines 234--235
+ [][] 
+ []
 
 
-LaTeX Warning: Citation 'Pierret1994' on page 2 undefined on input line 208.
+LaTeX Warning: Reference `fig:poldiodo' on page 3 undefined on input line 239.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
+
+
+LaTeX Warning: Citation 'Malik1996' on page 3 undefined on input line 263.
+
+
+LaTeX Warning: Citation 'Boylestad' on page 3 undefined on input line 263.
+
+
+LaTeX Warning: Citation 'Horowitz1989' on page 3 undefined on input line 263.
+
+
+LaTeX Warning: Citation 'Gray1995' on page 3 undefined on input line 263.
+
+
+LaTeX Warning: Citation 'Floyd2008' on page 3 undefined on input line 263.
+
+
+LaTeX Warning: Citation 'Behzad2013' on page 3 undefined on input line 263.
+
+
+LaTeX Warning: Citation 'Schilling1994' on page 3 undefined on input line 263.
+
+
+LaTeX Warning: Citation 'Pierret1994' on page 3 undefined on input line 263.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
 \T1/phv/m/n/10 en $\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ;\OT1/cmr/m/n/10 7 $\T1/phv/m/n/10 V [[], [], [],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
 
-<./fig/circuito_3.pdf, id=102, 213.16338pt x 156.70946pt>
+<./fig/circuito_3.pdf, id=131, 213.16338pt x 156.70946pt>
 File: ./fig/circuito_3.pdf Graphic file (type pdf)
 <use ./fig/circuito_3.pdf>
-Package pdftex.def Info: ./fig/circuito_3.pdf  used on input line 226.
+Package pdftex.def Info: ./fig/circuito_3.pdf  used on input line 281.
 (pdftex.def)             Requested size: 216.81pt x 159.39436pt.
 
+LaTeX Warning: Empty bibliography on input line 309.
 
 
-LaTeX Warning: Empty bibliography on input line 254.
 
-<./fig/cvjmv2.jpg, id=103, 1016.29688pt x 1227.08438pt>
+[3 <./fig/SignalSimulated_07.png> <./fig/plot4.png (PNG copy)>]
+<./fig/cvjmv2.jpg, id=147, 1016.29688pt x 1227.08438pt>
 File: ./fig/cvjmv2.jpg Graphic file (type jpg)
 <use ./fig/cvjmv2.jpg>
-Package pdftex.def Info: ./fig/cvjmv2.jpg  used on input line 259.
+Package pdftex.def Info: ./fig/cvjmv2.jpg  used on input line 314.
 (pdftex.def)             Requested size: 75.8778pt x 91.61543pt.
 
-Overfull \hbox (3.60782pt too wide) in paragraph at lines 259--259
+Overfull \hbox (3.60782pt too wide) in paragraph at lines 314--314
  [][] 
  []
 
 File: ./fig/cvjmv2.jpg Graphic file (type jpg)
 <use ./fig/cvjmv2.jpg>
-Package pdftex.def Info: ./fig/cvjmv2.jpg  used on input line 259.
+Package pdftex.def Info: ./fig/cvjmv2.jpg  used on input line 314.
 (pdftex.def)             Requested size: 75.8778pt x 91.61543pt.
 
-Overfull \hbox (3.60782pt too wide) in paragraph at lines 259--259
+Overfull \hbox (3.60782pt too wide) in paragraph at lines 314--314
  [][] 
  []
 
@@ -1386,7 +1435,11 @@ Overfull \hbox (3.60782pt too wide) in paragraph at lines 259--259
 
 
 
-[2 <./fig/circuito_3.pdf> <./fig/cvjmv2.jpg>] (Informe_Lab2.aux
+
+
+[4
+
+ <./fig/circuito_3.pdf> <./fig/cvjmv2.jpg>] (Informe_Lab2.aux
 LaTeX Info: Redefining \sptext on input line 12.
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
@@ -1400,7 +1453,7 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Informe_Lab2.out' has not changed.
-(rerunfilecheck)             Checksum: 4841D55BA5609A9375211AF3A46B3EF8;3065.
+(rerunfilecheck)             Checksum: FA63A7FC4E7672B54C5405A9960B635A;3067.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                Informe_Lab2
@@ -1411,17 +1464,17 @@ Package logreq Info: Writing requests to 'Informe_Lab2.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 56441 strings out of 473523
- 1327842 string characters out of 5714630
- 2355097 words of memory out of 5000000
- 79031 multiletter control sequences out of 15000+600000
+ 56520 strings out of 473523
+ 1330243 string characters out of 5714630
+ 2353894 words of memory out of 5000000
+ 79101 multiletter control sequences out of 15000+600000
  691269 words of font info for 162 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  99i,12n,101p,1252b,1828s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Informe_Lab2.pdf (2 pages, 722134 bytes).
+Output written on Informe_Lab2.pdf (4 pages, 1463589 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
- 176 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 218 PDF objects out of 1000 (max. 8388607)
+ 41 named destinations out of 1000 (max. 500000)
+ 211 words of extra memory for PDF output out of 10000 (max. 10000000)
 

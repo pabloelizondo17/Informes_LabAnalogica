@@ -146,14 +146,11 @@ Como tercera modificación, se le agrega una fuente en CD en serie con el diodo 
                 \draw (6.5,2.5) to [R, l=$R_L$] (6.5,0);
                 \draw (6.5,0) to [short] (0,0);
 
-
                 % Diodo IN914
                 \draw (4.5,2.5) to [D, l=$D_1$, fill=black] (4.5,1.25);
 
                 % Fuente de CD
                 \draw (4.5,1.25) to [battery, l=$V_{CD}$] (4.5,0);
-                
-
         \end{circuitikz}
         \caption{Circuito recortador con Diodo con ajuste}
         \label{fig:recortador_conAjuste}
@@ -161,7 +158,65 @@ Como tercera modificación, se le agrega una fuente en CD en serie con el diodo 
 
 \subsection{Simulaciones}
 Acá se muestran y describen los resultados teóricos esperados por medio de simulaciones, para este caso corresponden a gráficas de señales en su mayoría. 
+Del circuito mostrado en la FIg. \ref{fig:recortador_sinDiodo} se obtienen las siguientes señales simuladas.
 
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=3in]{SignalSimulated_01.png}
+        \caption{Señales de salida y entrada del circuito recortador sin Diodo (simulado).}
+        \label{fig:SignalSimulated_01}
+\end{figure}
+
+Ambas señales en la Fig. \ref{fig:SignalSimulated_01} se ven prácticamente iguales, ya que el valor de $R_1$ respecto a $R_L$, es muy pequeño. Por otro lado, en la Fig. \ref{fig:SignalSimulated_02} se muestra la simulación del circuito de la Fig. \ref{fig:recortador_conDiodo}.
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=3in]{SignalSimulated_02.png}
+        \caption{Señales de salida y entrada del circuito recortador con Diodo (simulado).}
+        \label{fig:SignalSimulated_02}
+\end{figure}
+
+En la Fig. \ref{fig:SignalSimulated_02} existen diferencias más notorias entre las señales de entrada y salida. Ahora, para el mismo circuito de la Fig. \ref{fig:recortador_conDiodo}, se muestra la señal de tensión presente en la resistencia $R_2$.
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=3in]{SignalSimulated_03.png}
+        \caption{Señal de tensión en la resistencia $R_2$ (simulado).}
+        \label{fig:SignalSimulated_03}
+\end{figure}
+
+Seguidamente, al cambiar la resistencia de carga $R_L$ por uno cuyo valor sea de $10~k\Omega$, se tienen las siguientes señales de entrada y salida para el circuito mostrado en la Fig. \ref{fig:recortador_conDiodo}
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=3in]{SignalSimulated_04.png}
+        \caption{Señales de salida y entrada del circuito recortador con Diodo, con $R_L=10~k\Omega$ (simulado).}
+        \label{fig:SignalSimulated_04}
+\end{figure}
+
+A continuación, restableciendo la resistencia $R_L$ a su valor original de $100~k\Omega$, se modifica de manera que resulta en el circuito de la Fig. \ref{fig:recortador_conAjuste}.
+Se hacen variaciones en la fuente de CD, desde los $0~V$ hasta los $2~V$, con pasos de $500~mV$. Obteniendo las siguientes señales.
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=3in]{SignalSimulated_05.png}
+        \caption{Circuito recortador con fuente de CD en $0~V$ (simulado).}
+        \label{fig:SignalSimulated_05}
+\end{figure}
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=3in]{SignalSimulated_06.png}
+        \caption{Circuito recortador con fuente de CD en $500~mV$ (simulado).}
+        \label{fig:SignalSimulated_06}
+\end{figure}
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=3in]{SignalSimulated_07.png}
+        \caption{Circuito recortador con fuente de CD en $1~V$ (simulado).}
+        \label{fig:SignalSimulated_07}
+\end{figure}
 
 \subsection{Resultados Experimentales}
 
