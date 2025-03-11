@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.2.24)  9 MAR 2025 20:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.2.24)  10 MAR 2025 22:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1052,14 +1052,69 @@ Package biblatex Info: ... and expl3
 Package: xparse 2024-08-16 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
-))
+)) (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/circuitikz\circuitikz.sty
+Package: circuitikz 2025/01/10{} The CircuiTikz circuit drawing package version 1.7.1
+ (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen345
+\pgfarrowlength=\dimen346
+\pgfarrowwidth=\dimen347
+\pgfarrowlinewidth=\dimen348
+) (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarybending.code.tex
+File: tikzlibrarybending.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulebending.code.tex
+File: pgfmodulebending.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulenonlineartransformations.code.tex
+File: pgfmodulenonlineartransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgftransformnonlinearflatness=\dimen349
+) (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibrarycurvilinear.code.tex
+File: pgflibrarycurvilinear.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@curvilinear@time@a=\dimen350
+\pgf@curvilinear@length@a=\dimen351
+\pgf@curvilinear@length@b=\dimen352
+\pgf@curvilinear@length@c=\dimen353
+\pgf@curvilinear@length@d=\dimen354
+)
+\pgf@arrows@the@rigidity=\dimen355
+)) (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfpu.code.tex (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)) (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirc.defines.tex
+\pgf@circ@count@a=\count493
+\pgf@circ@count@b=\count494
+\pgf@circ@count@c=\count495
+\pgf@circ@res@up=\dimen356
+\pgf@circ@res@down=\dimen357
+\pgf@circ@res@zero=\dimen358
+\pgf@circ@res@left=\dimen359
+\pgf@circ@res@right=\dimen360
+\pgf@circ@res@other=\dimen361
+\pgf@circ@res@step=\dimen362
+\pgf@circ@res@temp=\dimen363
+\pgf@circ@Rlen=\dimen364
+\pgf@circ@scaled@Rlen=\dimen365
+\pgfstartlinewidth=\dimen366
+) (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircutils.tex
+\ctikz@scratchbox=\box125
+) (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircpath.tex) (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircshapes.tex) (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircmonopoles.tex) (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircbipoles.tex) (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirctripoles.tex
+\pgf@circ@res@count=\count496
+) (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircquadpoles.tex) (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircmultipoles.tex) (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirclabel.tex)
+(C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircvoltage.tex
+\pgfcirc@labelshift=\dimen367
+) (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirccurrent.tex) (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircflow.tex)) (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count497
+\float@exts=\toks63
+\float@box=\box126
+\@float@everytoks=\toks64
+\@floatcapt=\box127
+)
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count493
-\@quotereset=\count494
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 34.
+\@quotelevel=\count498
+\@quotereset=\count499
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 36.
 (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 ) (Informe_Lab2.aux
@@ -1068,100 +1123,101 @@ LaTeX Info: Redefining \% on input line 12.
 )
 \openout1 = `Informe_Lab2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/txsyc/m/n on input line 34.
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/txsyc/m/n on input line 36.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 36.
  (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 34.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <5> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 34.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 34.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <7> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 34.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 34.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <8> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 34.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 34.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <9> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 34.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 34.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 34.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <11> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 34.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <11> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 34.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 34.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 34.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <17> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 34.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <17> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 34.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <20> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 34.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <20> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 34.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <24> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 34.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <24> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 34.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 36.
 
 -- Lines per column: 57 (approximate, difference = 6.99286pt).
-LaTeX Info: Redefining \. on input line 34.
-LaTeX Info: Redefining \% on input line 34.
+LaTeX Info: Redefining \. on input line 36.
+LaTeX Info: Redefining \% on input line 36.
 (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-spanish.trsl
 File: translations-basic-dictionary-spanish.trsl (spanish translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `spanish'. on input line 34.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `spanish'. on input line 36.
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count495
-\scratchdimen=\dimen345
-\scratchbox=\box125
-\nofMPsegments=\count496
-\nofMParguments=\count497
-\everyMPshowfont=\toks63
-\MPscratchCnt=\count498
-\MPscratchDim=\dimen346
-\MPnumerator=\count499
-\makeMPintoPDFobject=\count500
-\everyMPtoPDFconversion=\toks64
+\scratchcounter=\count500
+\scratchdimen=\dimen368
+\scratchbox=\box128
+\nofMPsegments=\count501
+\nofMParguments=\count502
+\everyMPshowfont=\toks65
+\MPscratchCnt=\count503
+\MPscratchDim=\dimen369
+\MPnumerator=\count504
+\makeMPintoPDFobject=\count505
+\everyMPtoPDFconversion=\toks66
 ) (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 34.
+Package hyperref Info: Link coloring OFF on input line 36.
  (Informe_Lab2.out) (Informe_Lab2.out)
 \@outlinefile=\write5
 \openout5 = `Informe_Lab2.out'.
@@ -1215,121 +1271,113 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Informe_Lab2.bbl' not found.
 
 No file Informe_Lab2.bbl.
-Package biblatex Info: Reference section=0 on input line 34.
-Package biblatex Info: Reference segment=0 on input line 34.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 79.
+Package biblatex Info: Reference section=0 on input line 36.
+Package biblatex Info: Reference segment=0 on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 81.
 (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 79.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 81.
  (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 79.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 81.
  (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+trsy on input line 79.
+LaTeX Font Info:    Trying to load font information for U+trsy on input line 81.
  (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/trsym\utrsy.fd
 File: utrsy.fd 2000/06/25v1.0transformation symbol font definitions
 )
-<./fig/circuito_1.pdf, id=75, 182.43758pt x 125.37439pt>
-File: ./fig/circuito_1.pdf Graphic file (type pdf)
-<use ./fig/circuito_1.pdf>
-Package pdftex.def Info: ./fig/circuito_1.pdf  used on input line 90.
-(pdftex.def)             Requested size: 180.67499pt x 124.17267pt.
-<./fig/circuito_2.pdf, id=76, 181.44086pt x 125.37439pt>
-File: ./fig/circuito_2.pdf Graphic file (type pdf)
-<use ./fig/circuito_2.pdf>
-Package pdftex.def Info: ./fig/circuito_2.pdf  used on input line 97.
-(pdftex.def)             Requested size: 180.67499pt x 124.84605pt.
-
 
 <./fig/plot4.png, id=79, 536.75531pt x 335.00156pt>
 File: ./fig/plot4.png Graphic file (type png)
 <use ./fig/plot4.png>
-Package pdftex.def Info: ./fig/plot4.png  used on input line 112.
+Package pdftex.def Info: ./fig/plot4.png  used on input line 172.
 (pdftex.def)             Requested size: 267.39877pt x 166.88695pt.
 
-Overfull \hbox (23.15678pt too wide) in paragraph at lines 112--113
+Overfull \hbox (23.15678pt too wide) in paragraph at lines 172--173
  [][] 
  []
 
 File: ./fig/plot4.png Graphic file (type png)
 <use ./fig/plot4.png>
-Package pdftex.def Info: ./fig/plot4.png  used on input line 119.
+Package pdftex.def Info: ./fig/plot4.png  used on input line 179.
 (pdftex.def)             Requested size: 267.39877pt x 166.88695pt.
 
-Overfull \hbox (23.15678pt too wide) in paragraph at lines 119--120
+Overfull \hbox (23.15678pt too wide) in paragraph at lines 179--180
  [][] 
  []
+
+
+LaTeX Warning: Reference `fig:poldiodo' on page 1 undefined on input line 184.
 
 
 
 [1{C:/Users/pablo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
- <./fig/circuito_1.pdf> <./fig/circuito_2.pdf> <./fig/plot4.png (PNG copy)>]
+ <./fig/plot4.png (PNG copy)>]
 
-LaTeX Warning: Citation 'Malik1996' on page 2 undefined on input line 148.
-
-
-LaTeX Warning: Citation 'Boylestad' on page 2 undefined on input line 148.
+LaTeX Warning: Citation 'Malik1996' on page 2 undefined on input line 208.
 
 
-LaTeX Warning: Citation 'Horowitz1989' on page 2 undefined on input line 148.
+LaTeX Warning: Citation 'Boylestad' on page 2 undefined on input line 208.
 
 
-LaTeX Warning: Citation 'Gray1995' on page 2 undefined on input line 148.
+LaTeX Warning: Citation 'Horowitz1989' on page 2 undefined on input line 208.
 
 
-LaTeX Warning: Citation 'Floyd2008' on page 2 undefined on input line 148.
+LaTeX Warning: Citation 'Gray1995' on page 2 undefined on input line 208.
 
 
-LaTeX Warning: Citation 'Behzad2013' on page 2 undefined on input line 148.
+LaTeX Warning: Citation 'Floyd2008' on page 2 undefined on input line 208.
 
 
-LaTeX Warning: Citation 'Schilling1994' on page 2 undefined on input line 148.
+LaTeX Warning: Citation 'Behzad2013' on page 2 undefined on input line 208.
 
 
-LaTeX Warning: Citation 'Pierret1994' on page 2 undefined on input line 148.
+LaTeX Warning: Citation 'Schilling1994' on page 2 undefined on input line 208.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
+LaTeX Warning: Citation 'Pierret1994' on page 2 undefined on input line 208.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
 \T1/phv/m/n/10 en $\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ;\OT1/cmr/m/n/10 7 $\T1/phv/m/n/10 V [[], [], [],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
-<./fig/circuito_3.pdf, id=147, 213.16338pt x 156.70946pt>
+<./fig/circuito_3.pdf, id=102, 213.16338pt x 156.70946pt>
 File: ./fig/circuito_3.pdf Graphic file (type pdf)
 <use ./fig/circuito_3.pdf>
-Package pdftex.def Info: ./fig/circuito_3.pdf  used on input line 166.
+Package pdftex.def Info: ./fig/circuito_3.pdf  used on input line 226.
 (pdftex.def)             Requested size: 216.81pt x 159.39436pt.
 
 
 
-LaTeX Warning: Empty bibliography on input line 194.
+LaTeX Warning: Empty bibliography on input line 254.
 
-<./fig/cvjmv2.jpg, id=148, 1016.29688pt x 1227.08438pt>
+<./fig/cvjmv2.jpg, id=103, 1016.29688pt x 1227.08438pt>
 File: ./fig/cvjmv2.jpg Graphic file (type jpg)
 <use ./fig/cvjmv2.jpg>
-Package pdftex.def Info: ./fig/cvjmv2.jpg  used on input line 199.
+Package pdftex.def Info: ./fig/cvjmv2.jpg  used on input line 259.
 (pdftex.def)             Requested size: 75.8778pt x 91.61543pt.
 
-Overfull \hbox (3.60782pt too wide) in paragraph at lines 199--199
+Overfull \hbox (3.60782pt too wide) in paragraph at lines 259--259
  [][] 
  []
 
 File: ./fig/cvjmv2.jpg Graphic file (type jpg)
 <use ./fig/cvjmv2.jpg>
-Package pdftex.def Info: ./fig/cvjmv2.jpg  used on input line 199.
+Package pdftex.def Info: ./fig/cvjmv2.jpg  used on input line 259.
 (pdftex.def)             Requested size: 75.8778pt x 91.61543pt.
 
-Overfull \hbox (3.60782pt too wide) in paragraph at lines 199--199
+Overfull \hbox (3.60782pt too wide) in paragraph at lines 259--259
  [][] 
  []
 
@@ -1352,7 +1400,7 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Informe_Lab2.out' has not changed.
-(rerunfilecheck)             Checksum: 6F3B4D5A2B17513D47BA1C476B67FEBE;3052.
+(rerunfilecheck)             Checksum: 4841D55BA5609A9375211AF3A46B3EF8;3065.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                Informe_Lab2
@@ -1363,17 +1411,17 @@ Package logreq Info: Writing requests to 'Informe_Lab2.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37344 strings out of 473523
- 753096 string characters out of 5714630
- 1519080 words of memory out of 5000000
- 60009 multiletter control sequences out of 15000+600000
+ 56441 strings out of 473523
+ 1327842 string characters out of 5714630
+ 2355097 words of memory out of 5000000
+ 79031 multiletter control sequences out of 15000+600000
  691269 words of font info for 162 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  99i,12n,101p,1252b,1828s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Informe_Lab2.pdf (2 pages, 730714 bytes).
+Output written on Informe_Lab2.pdf (2 pages, 722134 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
- 186 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 177 PDF objects out of 1000 (max. 8388607)
+ 32 named destinations out of 1000 (max. 500000)
+ 176 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -26,6 +26,8 @@
 \usepackage[natbib=true,style=trad-unsrt,backend=biber]{biblatex}
 
 \addbibresource{literatura.bib}
+\usepackage{circuitikz}
+\usepackage{float}
 
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
@@ -39,16 +41,16 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Experimento 01: El Diodo}
+\title{Experimento 02: Aplicaciones del Diodo}
 
 
-\author{José~Miguel~Barboza-Retana,~\IEEEmembership{Profesor,~ITCR}
-        y~Ronald~Barboza-Retana,~\IEEEmembership{Estudiante,~ITCR,}
+\author{Juan~P.~Elizondo~Espinoza,~\IEEEmembership{Estudiante,~TEC}
+        y~Matías~A.~Camacho~Abarca,~\IEEEmembership{Estudiante,~TEC.}
 }
 
 
 % The paper headers
-\markboth{EL3215 Laboratorio de Electrónica Analógica, IIS2022}%
+\markboth{TEC.~EL-3215 Laboratorio de Electrónica Analógica, IS~2025}%
 {EL3215 Laboratorio de Electrónica Analógica}
 
 
@@ -75,34 +77,92 @@ Diodo, tensión, corriente, junta, ruptura.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Curva Característica del Diodo}
+\section{Circuitos recortadores con Diodos}
 El texto va aquí. La ecuación de la ley de Ohm es $V=I\cdot R$.
 
 
 \subsection{Circuitos de Medición}
 
-El circuito de la Fig. \ref{fig:poldiodo} se utiliza para obtener una curva característica de un diodo utilizando una fuente de tensión CD y un multímetro. 
+El circuito de la Fig. \ref{fig:recortador_sinDiodo} se utiliza para ver el comportamiento de la señal de salida (modificada por medio de un divisor de tensión), respecto a la señal de entrada Vs.
 
-\begin{figure}[!ht]
-\centering
-\begin{subfigure}[c]{0.4\textwidth}
-	\centering
-	\includegraphics[width=2.5in]{circuito_1}
-	\caption{Directa}
-	\label{fig:directa}	
-\end{subfigure}
-\hfill
-\begin{subfigure}[c]{0.4\textwidth}
-	\centering
-	\includegraphics[width=2.5in]{circuito_2}
-	\caption{Inversa}
-	\label{fig:reversa}	
-\end{subfigure}
-\caption{Polarización del diodo}
-\label{fig:poldiodo}
+\begin{figure}[H]
+        \centering
+        \begin{circuitikz}
+                % Fuente de señal CA
+                \draw (0,0) to [sV, l=$Vs$] (0,2.5);
+                \draw (0,2.5) to [short] (2.5,2.5);
+
+                % Resistencia en paralelo a la fuente
+                \draw (2.5,2.5) to [R, l=$R_1$] (2.5,0);
+
+                % Resistencias en serie
+                \draw (2.5,2.5) to [R, l^=$R_2$] (5,2.5);
+                \draw (5,2.5) to [R, l=$R_L$] (5,0);
+
+                \draw (5,0) to [short] (0,0);
+        \end{circuitikz}
+        \caption{Circuito recortador sin Diodo}
+        \label{fig:recortador_sinDiodo}
+\end{figure}
+
+Luego, se modifica el circuito anterior al agregarle un diodo, de manera que ahora es un circuito recortador que utiliza un elemento activo. Según se muestra en la Fig. \ref{fig:recortador_conDiodo}.
+
+\begin{figure}[H]
+        \centering
+        \begin{circuitikz}
+                % Fuente de señal CA
+                \draw (0,0) to [sV, l=$Vs$] (0,2.5);
+                \draw (0,2.5) to [short] (2,2.5);
+
+                % Resistencia
+                \draw (2,2.5) to [R, l=$R_1$] (2,0);
+                \draw (2,2.5) to [R, l^=$R_2$] (4.5,2.5);
+                \draw (4.5,2.5) to [short] (6.5,2.5);
+                \draw (6.5,2.5) to [R, l=$R_L$] (6.5,0);
+                \draw (6.5,0) to [short] (0,0);
+
+
+                % Diodo IN914
+                \draw (4.5,2.5) to [D, l=$D_1$, fill=black] (4.5,0);
+
+        \end{circuitikz}
+        \caption{Circuito recortador con Diodo}
+        \label{fig:recortador_conDiodo}
+\end{figure}
+
+Como tercera modificación, se le agrega una fuente en CD en serie con el diodo al circuito según la Fig. \ref{fig:recortador_conAjuste}, que agrega un ajuste a la tensión vista por la carga. 
+
+\begin{figure}[H]
+        \centering
+        \begin{circuitikz}
+                % Fuente de señal CA
+                \draw (0,0) to [sV, l=$Vs$] (0,2.5);
+                \draw (0,2.5) to [short] (2,2.5);
+
+                % Resistencia
+                \draw (2,2.5) to [R, l=$R_1$] (2,0);
+                \draw (2,2.5) to [R, l^=$R_2$] (4.5,2.5);
+                \draw (4.5,2.5) to [short] (6.5,2.5);
+                \draw (6.5,2.5) to [R, l=$R_L$] (6.5,0);
+                \draw (6.5,0) to [short] (0,0);
+
+
+                % Diodo IN914
+                \draw (4.5,2.5) to [D, l=$D_1$, fill=black] (4.5,1.25);
+
+                % Fuente de CD
+                \draw (4.5,1.25) to [battery, l=$V_{CD}$] (4.5,0);
+                
+
+        \end{circuitikz}
+        \caption{Circuito recortador con Diodo con ajuste}
+        \label{fig:recortador_conAjuste}
 \end{figure}
 
 \subsection{Simulaciones}
+Acá se muestran y describen los resultados teóricos esperados por medio de simulaciones, para este caso corresponden a gráficas de señales en su mayoría. 
+
+
 \subsection{Resultados Experimentales}
 
 La gráfica de la Fig. \ref{fig:plot3} muestra una mala relación de tamaño para este formato de artículo, sin embargo, la que se muestra en la Fig. \ref{fig:plot4} se observan mejor los detalles de nombres de ejes y mayor resolución.
