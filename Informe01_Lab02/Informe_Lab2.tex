@@ -72,7 +72,12 @@ Diodo, tensión, corriente, junta, ruptura.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introducción}
 
-\IEEEPARstart{E}{n} attempt 222
+\IEEEPARstart{U}n diodo es un componente electrónico de dos terminales que permite el flujo de corriente en una dirección y lo bloquea en la otra. Está formado por la unión de dos materiales semiconductores con diferente tipo de dopaje.
+Estos materiales son conocidos como tipo p y tipo n. El material tipo p es aquel que es formado cuando se dopan materiales semiconductores como el germanio
+o el silicio con átomos de impurezas que tengan tres eletrones de valencia, mientras que los materiales tipo n son aquellos
+que se crean añadiendo impurezas con cinco electrones de valencia. Al unir en un solo dispostivo ambos tipos de materiales, se obtiene
+una junta pn, o diodo. Dicha junta, idealmente, funciona de tal manera que el flujo de huecos (definido como el flujo de cargas positivas, la ausencia de electrones), el cual sigue el flujo convencional eléctrico,
+es permitido por el diodo a través del material p hasta el material n. En el otro caso, de material n a p, la corriente no pasaría de un lugar a otro
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -92,11 +97,11 @@ El circuito de la Fig. \ref{fig:recortador_sinDiodo} se utiliza para ver el comp
                 \draw (0,2.5) to [short] (2.5,2.5);
 
                 % Resistencia en paralelo a la fuente
-                \draw (2.5,2.5) to [R, l=$R_1$] (2.5,0);
+                \draw (2.5,2.5) to [R,l_=$R_1$, a^={10 k$\Omega$}] (2.5,0);
 
                 % Resistencias en serie
-                \draw (2.5,2.5) to [R, l^=$R_2$] (5,2.5);
-                \draw (5,2.5) to [R, l=$R_L$] (5,0);
+                \draw (2.5,2.5) to [R, l^=$R_2$, a={1 k$\Omega$}] (5,2.5);
+                \draw (5,2.5) to [R,l_=$R_L$, a^={100 k$\Omega$}] (5,0);
 
                 \draw (5,0) to [short] (0,0);
         \end{circuitikz}
@@ -114,10 +119,10 @@ Luego, se modifica el circuito anterior al agregarle un diodo, de manera que aho
                 \draw (0,2.5) to [short] (2,2.5);
 
                 % Resistencia
-                \draw (2,2.5) to [R, l=$R_1$] (2,0);
-                \draw (2,2.5) to [R, l^=$R_2$] (4.5,2.5);
+                \draw (2,2.5) to [R,l_=$R_1$, a^={10 k$\Omega$}] (2,0);
+                \draw (2,2.5) to [R, l^=$R_2$, a={1 k$\Omega$}] (4.5,2.5);
                 \draw (4.5,2.5) to [short] (6.5,2.5);
-                \draw (6.5,2.5) to [R, l=$R_L$] (6.5,0);
+                \draw (6.5,2.5) to [R,l_=$R_L$, a^={100 k$\Omega$}] (6.5,0);
                 \draw (6.5,0) to [short] (0,0);
 
 
