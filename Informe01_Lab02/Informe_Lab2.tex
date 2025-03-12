@@ -72,12 +72,23 @@ Diodo, tensión, corriente, junta, ruptura.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introducción}
 
-\IEEEPARstart{U}n diodo es un componente electrónico de dos terminales que permite el flujo de corriente en una dirección y lo bloquea en la otra. Está formado por la unión de dos materiales semiconductores con diferente tipo de dopaje.
-Estos materiales son conocidos como tipo p y tipo n. El material tipo p es aquel que es formado cuando se dopan materiales semiconductores como el germanio
-o el silicio con átomos de impurezas que tengan tres eletrones de valencia, mientras que los materiales tipo n son aquellos
-que se crean añadiendo impurezas con cinco electrones de valencia. Al unir en un solo dispostivo ambos tipos de materiales, se obtiene
-una junta pn, o diodo. Dicha junta, idealmente, funciona de tal manera que el flujo de huecos (definido como el flujo de cargas positivas, la ausencia de electrones), el cual sigue el flujo convencional eléctrico,
-es permitido por el diodo a través del material p hasta el material n. En el otro caso, de material n a p, la corriente no pasaría de un lugar a otro
+\IEEEPARstart{U}n diodo es un componente electrónico de dos terminales que permite el flujo de corriente en una dirección y lo bloquea en la otra. Está formado por la unión de dos materiales semiconductores con diferente tipo de dopaje: tipo p y tipo n.
+
+El material tipo p se forma al dopar semiconductores como el silicio o el germanio con impurezas de tres electrones de valencia, como el boro, lo que genera una abundancia de huecos (cargas positivas). Por otro lado, el material tipo n se obtiene al agregar impurezas con cinco electrones de valencia, como el fósforo o el arsénico, lo que introduce electrones libres en la estructura.
+
+Al unir ambos materiales en un solo dispositivo, se forma una unión pn, la base del funcionamiento del diodo. Idealmente, los huecos pueden moverse desde la región p hacia la región n, siguiendo la dirección de la corriente convencional. Sin embargo, si se intenta conducir corriente en la dirección opuesta (de n a p), la unión pn presenta una barrera que impide el flujo, actuando como un interruptor unidireccional.
+
+Estas propiedades aplican para diodos ideales, ya que en la realidad los diodos tienen un rango de tensión necesario para que la
+corriente fluya significativamente en polarización directa (corriente convencional de p a n). Los diodos incluso tienen corriente en polarización inversa (corriente convencional de n a p), aunque esta suele ser despreciable. Sin embargo, para efectos de análisis, se pueden 
+generalizar muchas de estas propiedades.
+
+Uno de los usos más particulares de los diodos es en circuitos recortadores. Estos se aprovechan del funcionamiento del diodo como una fuente de tensión en polarización directa
+y como un nodo abierto en inversa. En estas aplicaciones, se elimina partes de la señal de entrada por encima o por debajo de cierto nivel de voltaje. Existen dos configuraciones principales: en serie y en paralelo.  
+
+En los recortadores en paralelo, el diodo se coloca en paralelo con la carga y conduce solo cuando la señal supera un voltaje específico. Si el diodo está sin polarización externa, su umbral de conducción es aproximadamente 0V en el modelo ideal.   
+
+Estos circuitos son útiles para limitar amplitudes y proteger componentes sensibles frente a sobrevoltajes. En el modelo ideal, el diodo cambia instantáneamente entre conducción y no conducción, lo que permite una representación simplificada del comportamiento del circuito.\cite{Boylestad}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

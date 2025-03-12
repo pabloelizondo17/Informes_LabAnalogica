@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.11)  11 MAR 2025 19:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.11)  11 MAR 2025 19:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1121,8 +1121,8 @@ LaTeX Font Info:    Trying to load font information for T1+phv on input line 36.
 (C:\Users\matia\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 ) (Informe_Lab2.aux
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
+LaTeX Info: Redefining \. on input line 14.
+LaTeX Info: Redefining \% on input line 14.
 )
 \openout1 = `Informe_Lab2.aux'.
 
@@ -1275,157 +1275,157 @@ Package biblatex Info: ... file 'Informe_Lab2.bbl' found.
  (Informe_Lab2.bbl)
 Package biblatex Info: Reference section=0 on input line 36.
 Package biblatex Info: Reference segment=0 on input line 36.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 85.
- (C:\Users\matia\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+
+
+LaTeX Warning: Citation 'Boylestad' on page 1 undefined on input line 90.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 96.
+(C:\Users\matia\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 85.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 96.
  (C:\Users\matia\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 85.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 96.
  (C:\Users\matia\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+trsy on input line 85.
+LaTeX Font Info:    Trying to load font information for U+trsy on input line 96.
  (C:\Users\matia\AppData\Local\Programs\MiKTeX\tex/latex/trsym\utrsy.fd
 File: utrsy.fd 2000/06/25v1.0transformation symbol font definitions
 )
-Overfull \hbox (13.4088pt too wide) in paragraph at lines 132--133
+Overfull \hbox (13.4088pt too wide) in paragraph at lines 143--144
  [][] 
  []
 
-<./fig/SignalSimulated_01.png, id=78, 247.689pt x 157.023pt>
-File: ./fig/SignalSimulated_01.png Graphic file (type png)
-<use ./fig/SignalSimulated_01.png>
-Package pdftex.def Info: ./fig/SignalSimulated_01.png  used on input line 169.
-(pdftex.def)             Requested size: 216.81pt x 137.44748pt.
 [1{C:/Users/matia/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
- <./fig/SignalSimulated_01.png>]
-<./fig/SignalSimulated_02.png, id=102, 250.974pt x 158.0085pt>
+]
+<./fig/SignalSimulated_01.png, id=95, 247.689pt x 157.023pt>
+File: ./fig/SignalSimulated_01.png Graphic file (type png)
+<use ./fig/SignalSimulated_01.png>
+Package pdftex.def Info: ./fig/SignalSimulated_01.png  used on input line 180.
+(pdftex.def)             Requested size: 216.81pt x 137.44748pt.
+<./fig/SignalSimulated_02.png, id=100, 250.974pt x 158.0085pt>
 File: ./fig/SignalSimulated_02.png Graphic file (type png)
 <use ./fig/SignalSimulated_02.png>
-Package pdftex.def Info: ./fig/SignalSimulated_02.png  used on input line 178.
+Package pdftex.def Info: ./fig/SignalSimulated_02.png  used on input line 189.
 (pdftex.def)             Requested size: 216.81pt x 136.50185pt.
-<./fig/SignalSimulated_03.png, id=105, 248.6745pt x 157.023pt>
+<./fig/SignalSimulated_03.png, id=103, 248.6745pt x 157.023pt>
 File: ./fig/SignalSimulated_03.png Graphic file (type png)
 <use ./fig/SignalSimulated_03.png>
-Package pdftex.def Info: ./fig/SignalSimulated_03.png  used on input line 187.
+Package pdftex.def Info: ./fig/SignalSimulated_03.png  used on input line 198.
 (pdftex.def)             Requested size: 216.81pt x 136.9012pt.
-<./fig/SignalSimulated_04.png, id=107, 249.3315pt x 157.023pt>
+<./fig/SignalSimulated_04.png, id=105, 249.3315pt x 157.023pt>
 File: ./fig/SignalSimulated_04.png Graphic file (type png)
 <use ./fig/SignalSimulated_04.png>
-Package pdftex.def Info: ./fig/SignalSimulated_04.png  used on input line 196.
+Package pdftex.def Info: ./fig/SignalSimulated_04.png  used on input line 207.
 (pdftex.def)             Requested size: 216.81pt x 136.5418pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-<./fig/SignalSimulated_05.png, id=109, 246.9225pt x 241.50224pt>
+<./fig/SignalSimulated_05.png, id=107, 246.9225pt x 241.50224pt>
 File: ./fig/SignalSimulated_05.png Graphic file (type png)
 <use ./fig/SignalSimulated_05.png>
-Package pdftex.def Info: ./fig/SignalSimulated_05.png  used on input line 206.
+Package pdftex.def Info: ./fig/SignalSimulated_05.png  used on input line 217.
 (pdftex.def)             Requested size: 216.81pt x 212.04724pt.
-<./fig/SignalSimulated_06.png, id=110, 246.9225pt x 243.309pt>
-File: ./fig/SignalSimulated_06.png Graphic file (type png)
-<use ./fig/SignalSimulated_06.png>
-Package pdftex.def Info: ./fig/SignalSimulated_06.png  used on input line 213.
-(pdftex.def)             Requested size: 216.81pt x 213.63365pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2 <./fig/SignalSimulated_02.png> <./fig/SignalSimulated_03.png> <./fig/SignalSimulated_04.png> <./fig/SignalSimulated_05.png>]
-<./fig/SignalSimulated_07.png, id=123, 260.172pt x 254.75175pt>
+ [2 <./fig/SignalSimulated_01.png> <./fig/SignalSimulated_02.png> <./fig/SignalSimulated_03.png> <./fig/SignalSimulated_04.png>]
+<./fig/SignalSimulated_06.png, id=120, 246.9225pt x 243.309pt>
+File: ./fig/SignalSimulated_06.png Graphic file (type png)
+<use ./fig/SignalSimulated_06.png>
+Package pdftex.def Info: ./fig/SignalSimulated_06.png  used on input line 224.
+(pdftex.def)             Requested size: 216.81pt x 213.63365pt.
+<./fig/SignalSimulated_07.png, id=121, 260.172pt x 254.75175pt>
 File: ./fig/SignalSimulated_07.png Graphic file (type png)
 <use ./fig/SignalSimulated_07.png>
-Package pdftex.def Info: ./fig/SignalSimulated_07.png  used on input line 220.
+Package pdftex.def Info: ./fig/SignalSimulated_07.png  used on input line 231.
 (pdftex.def)             Requested size: 216.81pt x 212.30295pt.
-<./fig/plot4.png, id=126, 536.75531pt x 335.00156pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<./fig/plot4.png, id=124, 536.75531pt x 335.00156pt>
 File: ./fig/plot4.png Graphic file (type png)
 <use ./fig/plot4.png>
-Package pdftex.def Info: ./fig/plot4.png  used on input line 231.
+Package pdftex.def Info: ./fig/plot4.png  used on input line 242.
 (pdftex.def)             Requested size: 267.39877pt x 166.88695pt.
 
-Overfull \hbox (23.15678pt too wide) in paragraph at lines 231--232
+Overfull \hbox (23.15678pt too wide) in paragraph at lines 242--243
  [][] 
  []
 
 File: ./fig/plot4.png Graphic file (type png)
 <use ./fig/plot4.png>
-Package pdftex.def Info: ./fig/plot4.png  used on input line 238.
+Package pdftex.def Info: ./fig/plot4.png  used on input line 249.
 (pdftex.def)             Requested size: 267.39877pt x 166.88695pt.
 
-Overfull \hbox (23.15678pt too wide) in paragraph at lines 238--239
+Overfull \hbox (23.15678pt too wide) in paragraph at lines 249--250
  [][] 
  []
 
 
-LaTeX Warning: Reference `fig:poldiodo' on page 3 undefined on input line 243.
+LaTeX Warning: Reference `fig:poldiodo' on page 3 undefined on input line 254.
+
+[3 <./fig/SignalSimulated_05.png> <./fig/SignalSimulated_06.png> <./fig/SignalSimulated_07.png> <./fig/plot4.png (PNG copy)>]
+
+LaTeX Warning: Citation 'Malik1996' on page 4 undefined on input line 278.
 
 
-LaTeX Warning: Citation 'Malik1996' on page 3 undefined on input line 267.
+LaTeX Warning: Citation 'Boylestad' on page 4 undefined on input line 278.
 
 
-LaTeX Warning: Citation 'Boylestad' on page 3 undefined on input line 267.
+LaTeX Warning: Citation 'Horowitz1989' on page 4 undefined on input line 278.
 
 
-LaTeX Warning: Citation 'Horowitz1989' on page 3 undefined on input line 267.
+LaTeX Warning: Citation 'Gray1995' on page 4 undefined on input line 278.
 
 
-LaTeX Warning: Citation 'Gray1995' on page 3 undefined on input line 267.
+LaTeX Warning: Citation 'Floyd2008' on page 4 undefined on input line 278.
 
 
-LaTeX Warning: Citation 'Floyd2008' on page 3 undefined on input line 267.
+LaTeX Warning: Citation 'Behzad2013' on page 4 undefined on input line 278.
 
 
-LaTeX Warning: Citation 'Behzad2013' on page 3 undefined on input line 267.
+LaTeX Warning: Citation 'Schilling1994' on page 4 undefined on input line 278.
 
 
-LaTeX Warning: Citation 'Schilling1994' on page 3 undefined on input line 267.
+LaTeX Warning: Citation 'Pierret1994' on page 4 undefined on input line 278.
 
 
-LaTeX Warning: Citation 'Pierret1994' on page 3 undefined on input line 267.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 267--268
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
 \T1/phv/m/n/10 en $\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ;\OT1/cmr/m/n/10 7 $\T1/phv/m/n/10 V [[], [], [],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--268
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
 
  []
 
-
-Underfull \vbox (badness 4779) has occurred while \output is active []
-
- [3 <./fig/SignalSimulated_06.png> <./fig/SignalSimulated_07.png> <./fig/plot4.png (PNG copy)>]
-<./fig/circuito_3.pdf, id=141, 213.16338pt x 156.70946pt>
+<./fig/circuito_3.pdf, id=140, 213.16338pt x 156.70946pt>
 File: ./fig/circuito_3.pdf Graphic file (type pdf)
 <use ./fig/circuito_3.pdf>
-Package pdftex.def Info: ./fig/circuito_3.pdf  used on input line 285.
+Package pdftex.def Info: ./fig/circuito_3.pdf  used on input line 296.
 (pdftex.def)             Requested size: 216.81pt x 159.39436pt.
 
+LaTeX Warning: Empty bibliography on input line 324.
 
-LaTeX Warning: Empty bibliography on input line 313.
-
-<./fig/cvjmv2.jpg, id=142, 1016.29688pt x 1227.08438pt>
+<./fig/cvjmv2.jpg, id=141, 1016.29688pt x 1227.08438pt>
 File: ./fig/cvjmv2.jpg Graphic file (type jpg)
 <use ./fig/cvjmv2.jpg>
-Package pdftex.def Info: ./fig/cvjmv2.jpg  used on input line 318.
+Package pdftex.def Info: ./fig/cvjmv2.jpg  used on input line 329.
 (pdftex.def)             Requested size: 75.8778pt x 91.61543pt.
 
-Overfull \hbox (3.60782pt too wide) in paragraph at lines 318--318
+Overfull \hbox (3.60782pt too wide) in paragraph at lines 329--329
  [][] 
  []
 
 File: ./fig/cvjmv2.jpg Graphic file (type jpg)
 <use ./fig/cvjmv2.jpg>
-Package pdftex.def Info: ./fig/cvjmv2.jpg  used on input line 318.
+Package pdftex.def Info: ./fig/cvjmv2.jpg  used on input line 329.
 (pdftex.def)             Requested size: 75.8778pt x 91.61543pt.
 
-Overfull \hbox (3.60782pt too wide) in paragraph at lines 318--318
+Overfull \hbox (3.60782pt too wide) in paragraph at lines 329--329
  [][] 
  []
 
@@ -1433,9 +1433,9 @@ Overfull \hbox (3.60782pt too wide) in paragraph at lines 318--318
 \openout6 = `Informe_Lab2.thm'.
 
 [4 <./fig/circuito_3.pdf> <./fig/cvjmv2.jpg>] (Informe_Lab2.aux
-LaTeX Info: Redefining \sptext on input line 12.
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
+LaTeX Info: Redefining \sptext on input line 14.
+LaTeX Info: Redefining \. on input line 14.
+LaTeX Info: Redefining \% on input line 14.
 )
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -1444,6 +1444,9 @@ L3 programming layer <2024-01-04>
 
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `Informe_Lab2.out' has not changed.
 (rerunfilecheck)             Checksum: FA63A7FC4E7672B54C5405A9960B635A;3067.
@@ -1459,13 +1462,13 @@ Package logreq Info: Writing requests to 'Informe_Lab2.run.xml'.
 Here is how much of TeX's memory you used:
  56443 strings out of 474486
  1329998 string characters out of 5743755
- 2333695 words of memory out of 5000000
+ 2326695 words of memory out of 5000000
  78076 multiletter control sequences out of 15000+600000
  690501 words of font info for 162 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 99i,12n,101p,1220b,1824s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,101p,1220b,1826s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Informe_Lab2.pdf (4 pages, 1465278 bytes).
+Output written on Informe_Lab2.pdf (4 pages, 1467227 bytes).
 PDF statistics:
  218 PDF objects out of 1000 (max. 8388607)
  41 named destinations out of 1000 (max. 500000)
