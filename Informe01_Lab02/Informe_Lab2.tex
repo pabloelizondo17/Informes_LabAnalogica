@@ -18,24 +18,25 @@
 %% http://www.ieee.org/
 
 
+
 \documentclass[journal]{IEEEtran}
 %
 \usepackage{instructivo}  % Commands for multiple choice
 \graphicspath{{./}{./fig/}}
 
-\usepackage[natbib=true,style=trad-unsrt,backend=biber]{biblatex}
 
-\addbibresource{literatura.bib}
 \usepackage{circuitikz}
 \usepackage{float}
 \usepackage{graphicx}
 \usepackage[skip=5pt]{caption}
 \usepackage{flafter}
 \usepackage{needspace}
+\usepackage{csquotes}
 
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
 
+\renewcommand\IEEEkeywordsname{Palabras clave}
 
 \begin{document}
 %
@@ -45,7 +46,7 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Experimento 02: Aplicaciones del Diodo}
+\title{Aplicaciones del diodo en circuitos recortadores}
 
 
 \author{Juan~P.~Elizondo~Espinoza,~\IEEEmembership{Estudiante,~TEC}
@@ -63,7 +64,8 @@
 
 
 \begin{abstract}
-El resumen no debe de exceder de 150 palabras y debe establecer lo que fue hecho, como fue hecho, los resultados principales y su significado. No cite referencias en el resumen. No coloque ecuaciones, símbolos especiales o palabras claves.
+El objetivo del experimento fue construir circuitos recortadores para entender el comportamiento de la onda de salida
+teniendo en cuenta distintos casos de polarización. Se logró comprobar el comportamiento teórico esperado de los circuitos a través de un análisis visual
 \end{abstract}
 
 % Se sugiere no más de cuatro palabras o frases cortas en orden alfabético, separadas por comas, que representen su reporte
@@ -91,7 +93,7 @@ y como un nodo abierto en inversa. En estas aplicaciones, se elimina partes de l
 
 En los recortadores en paralelo, el diodo se coloca en paralelo con la carga y conduce solo cuando la señal supera un voltaje específico. Si el diodo está sin polarización externa, su umbral de conducción es aproximadamente 0V en el modelo ideal.   
 
-Estos circuitos son útiles para limitar amplitudes y proteger componentes sensibles frente a sobrevoltajes. En el modelo ideal, el diodo cambia instantáneamente entre conducción y no conducción, lo que permite una representación simplificada del comportamiento del circuito.\cite{Boylestad}
+Estos circuitos son útiles para limitar amplitudes y proteger componentes sensibles frente a sobrevoltajes. En el modelo ideal, el diodo cambia instantáneamente entre conducción y no conducción, lo que permite una representación simplificada del comportamiento del circuito. \cite{Boylestad}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -504,12 +506,14 @@ Para mejorar la interpretación de los resultados, es necesario considerar posib
 representación o interferencias de ruido.
 
 \section{Conclusiones}
-Las conclusiones van aquí.
+Al realizar un análisis principalmente visual comparando los resultados teóricos con los experimentales, 
+se puede apreciar que las ondas de salida obtenidas durante el experimento siguieron la forma que se esperaba. Se vieron pequeñas diferencias
+en cuanto a las amplitudes esperadas, sin embargo el comportamiento general de la onda fue el esperado.
 
 \appendices
 
 \section{}
-\printbibliography
+
  
 % if you will not have a photo at all:
 \begin{IEEEbiographynophoto}{Juan P. Elizondo Espinoza}
@@ -527,6 +531,9 @@ Las conclusiones van aquí.
         Correo: juelizondo@estudiantec.cr
 \end{IEEEbiographynophoto}
 
-\vfill
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{literatura}
 
 \end{document}
