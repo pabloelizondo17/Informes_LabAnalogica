@@ -1,27 +1,6 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% bare_jrnl.tex
-% V1.4b
-% 2015/08/26
-% by Michael Shell
-% see http://www.michaelshell.org/
-% for current contact information.                                                                 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%% This is a skeleton file demonstrating the use of IEEEtran.cls
-%% (requires IEEEtran.cls version 1.8b or later) with an IEEE
-%% journal paper.
-%%
-%% Support sites:
-%% http://www.michaelshell.org/tex/ieeetran/
-%% http://www.ctan.org/pkg/ieeetran
-%% and
-%% http://www.ieee.org/
-
-
-
 \documentclass[journal]{IEEEtran}
 %
-\usepackage{instructivo}  % Commands for multiple choice
+\usepackage{instructivo}  
 \graphicspath{{./}{./fig/}}
 
 \usepackage{circuitikz}
@@ -33,19 +12,12 @@
 \usepackage{csquotes}
 
 
-% correct bad hyphenation here
+
 \hyphenation{op-tical net-works semi-conduc-tor}
 
 \renewcommand\IEEEkeywordsname{Palabras clave}
 
 \begin{document}
-%
-% paper title
-% Titles are generally capitalized except for words such as a, an, and, as,
-% at, but, by, for, in, nor, of, on, or, the, to and up, which are usually
-% not capitalized unless they are the first or last word of the title.
-% Linebreaks \\ can be used within to get better formatting as desired.
-% Do not put math or special symbols in the title.
 \title{Aplicaciones del diodo en circuitos recortadores}
 
 
@@ -54,12 +26,10 @@
 }
 
 
-% The paper headers
 \markboth{TEC.~EL-3215 Laboratorio de Electrónica Analógica, IS~2025}%
 {EL3215 Laboratorio de Electrónica Analógica}
 
 
-% make the title area
 \maketitle
 
 
@@ -68,7 +38,6 @@ El objetivo del experimento fue construir circuitos recortadores para entender e
 teniendo en cuenta distintos casos de polarización. Se logró comprobar el comportamiento teórico esperado de los circuitos a través de un análisis visual.
 \end{abstract}
 
-% Se sugiere no más de cuatro palabras o frases cortas en orden alfabético, separadas por comas, que representen su reporte
 \begin{IEEEkeywords}
 Diodo, tensión, corriente, junta, ruptura.
 \end{IEEEkeywords}
@@ -91,7 +60,7 @@ generalizar muchas de estas propiedades.
 Uno de los usos más particulares de los diodos es en circuitos recortadores. Estos se aprovechan del funcionamiento del diodo como una fuente de tensión en polarización directa
 y como un nodo abierto en inversa. En estas aplicaciones, se elimina partes de la señal de entrada por encima o por debajo de cierto nivel de voltaje. Existen dos configuraciones principales: en serie y en paralelo.  
 
-En los recortadores en paralelo, el diodo se coloca en paralelo con la carga y conduce solo cuando la señal supera un voltaje específico. Si el diodo está sin polarización externa, su umbral de conducción es aproximadamente 0V en el modelo ideal.   
+En los recortadores en paralelo, el diodo se coloca en paralelo con la carga y conduce solo cuando la señal supera un voltaje específico. Si el diodo está sin polarización externa, su umbral de conducción es aproximadamente 0 V en el modelo ideal.   
 
 Estos circuitos son útiles para limitar amplitudes y proteger componentes sensibles frente a sobrevoltajes. En el modelo ideal, el diodo cambia instantáneamente entre conducción y no conducción, lo que permite una representación simplificada del comportamiento del circuito. \cite{Boylestad}
 
@@ -110,7 +79,11 @@ El circuito de la Fig. \ref{fig:recortador_sinDiodo} se utiliza para ver el comp
         \centering
         \begin{circuitikz}
                 % Fuente de señal CA
-                \draw (0,0) to [sV, l=$Vs$] (0,2.5);
+                \draw (0,0) 
+                   to[sV] (0,2.5) % Fuente de CA
+                   node[left=0.7cm, yshift=-0.7cm] {$V_s$}
+                   node[left=0.5cm, yshift=-1.2cm] {$6\,V_{pp}$}
+                   node[left=0.4cm, yshift=-1.7cm] {$1\,kHz$};
                 \draw (0,2.5) to [short] (2.5,2.5);
 
                 % Resistencia en paralelo a la fuente
@@ -127,23 +100,32 @@ El circuito de la Fig. \ref{fig:recortador_sinDiodo} se utiliza para ver el comp
 \end{figure}
 
 Luego, se modifica el circuito anterior al agregarle un diodo, de manera que ahora es un circuito recortador que utiliza un elemento activo. Según se muestra en la Fig. \ref{fig:recortador_conDiodo}.
+Considere que los valores de las resistencias se mantienen iguales a los del circuito en la Fig. \ref{fig:recortador_sinDiodo}.
 \begin{figure}[H]
         \centering
         \begin{circuitikz}
                 % Fuente de señal CA
-                \draw (0,0) to [sV, l=$Vs$] (0,2.5);
+                \draw (0,0) 
+                   to[sV] (0,2.5) % Fuente de CA
+                   node[left=0.7cm, yshift=-0.7cm] {$V_s$}
+                   node[left=0.5cm, yshift=-1.2cm] {$6\,V_{pp}$}
+                   node[left=0.4cm, yshift=-1.7cm] {$1\,kHz$};
                 \draw (0,2.5) to [short] (2,2.5);
 
                 % Resistencia
-                \draw (2,2.5) to [R,l_=$R_1$, a^={10 k$\Omega$}] (2,0);
-                \draw (2,2.5) to [R, l^=$R_2$, a={1 k$\Omega$}] (4.5,2.5);
+                \draw (2,2.5) to [R,l_=$R_1$] (2,0);
+                \draw (2,2.5) to [R, l^=$R_2$] (4.5,2.5);
                 \draw (4.5,2.5) to [short] (6.5,2.5);
-                \draw (6.5,2.5) to [R,l_=$R_L$, a^={100 k$\Omega$}] (6.5,0);
+                \draw (6.5,2.5) to [R,l_=$R_L$] (6.5,0);
                 \draw (6.5,0) to [short] (0,0);
 
 
                 % Diodo IN914
-                \draw (4.5,2.5) to [D, l=$D_1$, fill=black] (4.5,0);
+                %\draw (4.5,2.5) to [D, l=$D_1$, fill=black] (4.5,0);
+                \draw (4.5,2.5)
+                   to[D, fill=black] (4.5,0)
+                   node[left=0.3cm, yshift=1.3cm] {$D_1$}
+                   node[left=0.3cm, yshift=0.9cm] {IN914};
 
         \end{circuitikz}
         \caption{Circuito recortador con Diodo}
@@ -155,21 +137,29 @@ Como tercera modificación, se le agrega una fuente en CD en serie con el diodo 
         \centering
         \begin{circuitikz}
                 % Fuente de señal CA
-                \draw (0,0) to [sV, l=$Vs$] (0,3);
+                \draw (0,0) 
+                to[sV] (0,3) % Fuente de CA
+                   node[left=0.7cm, yshift=-1cm] {$V_s$}
+                   node[left=0.5cm, yshift=-1.5cm] {$6\,V_{pp}$}
+                   node[left=0.4cm, yshift=-2cm] {$1\,kHz$};
                 \draw (0,3) to [short] (2,3);
 
                 % Resistencia
-                \draw (2,3) to [R,l_=$R_1$, a^={10 k$\Omega$}] (2,0);
-                \draw (2,3) to [R, l^=$R_2$, a={1 k$\Omega$}] (4.5,3);
+                \draw (2,3) to [R,l_=$R_1$] (2,0);
+                \draw (2,3) to [R, l^=$R_2$] (4.5,3);
                 \draw (4.5,3) to [short] (6.5,3);
-                \draw (6.5,3) to [R,l_=$R_L$, a^={100 k$\Omega$}] (6.5,0);
+                \draw (6.5,3) to [R,l_=$R_L$] (6.5,0);
                 \draw (6.5,0) to [short] (0,0);
 
                 % Diodo IN914
-                \draw (4.5,3) to [D, l=$D_1$, fill=black] (4.5,1.25);
+                %\draw (4.5,3) to [D, l=$D_1$, fill=black] (4.5,1.25);
+                \draw (4.5,3)
+                   to[D, fill=black] (4.5,1.25)
+                   node[left=0.3cm, yshift=1.0cm] {$D_1$}
+                   node[left=0.3cm, yshift=0.6cm] {IN914};
 
                 % Fuente de CD
-                \draw (4.5,1.25) to [battery, l=$V_{CD}$] (4.5,0);
+                \draw (4.5,1.25) to [battery, l_=$V_{CD}$] (4.5,0);
         \end{circuitikz}
         \caption{Circuito recortador con Diodo con ajuste}
         \label{fig:recortador_conAjuste}
@@ -204,79 +194,80 @@ En la Fig. \ref{fig:SignalSimulated_02} existen diferencias más notorias entre 
         \label{fig:SignalSimulated_03}
 \end{figure}
 
-Seguidamente, al cambiar la resistencia de carga $R_L$ por uno cuyo valor sea de $10~k\Omega$, se tienen las siguientes señales de entrada y salida para el circuito mostrado en la Fig. \ref{fig:recortador_conDiodo}
+Seguidamente, al cambiar la resistencia de carga $R_L$ por uno cuyo valor sea de $10~\textnormal{k}\Omega$, se tienen las siguientes señales de entrada y salida para el circuito mostrado en la Fig. \ref{fig:recortador_conDiodo}
 \begin{figure}[htbp]
         \centering
         \includegraphics[width=2.7in]{SignalSimulated_04.png}
-        \caption{Señales de salida y entrada del circuito recortador con Diodo, con $R_L=10~k\Omega$ (simulado).}
+        \caption{Señales de salida y entrada del circuito recortador con Diodo, con $R_L=10~\textnormal{k}\Omega$ (simulado).}
         \label{fig:SignalSimulated_04}
 \end{figure}
 
-A continuación, restableciendo la resistencia $R_L$ a su valor original de $100~k\Omega$, se modifica de manera que resulta en el circuito de la Fig. \ref{fig:recortador_conAjuste}.
-Se hacen variaciones en la fuente de CD, desde los $0~V$ hasta los $2~V$, con pasos de $500~mV$. Obteniendo las siguientes señales.
+A continuación, restableciendo la resistencia $R_L$ a su valor original de $100~\textnormal{k}\Omega$, se modifica de manera que resulta en el circuito de la Fig. \ref{fig:recortador_conAjuste}.
+Se hacen variaciones en la fuente de CD, desde los $0~\textnormal{V}$ hasta los $2~\textnormal{V}$, con pasos de $500~\textnormal{mV}$. Obteniendo las siguientes señales.
+
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.7in]{SignalSimulated_05.png}
-        \caption{Circuito recortador con fuente de CD en $0~V$ (simulado).}
+        \caption{Circuito recortador con fuente de CD en $0~\textnormal{V}$ (simulado).}
         \label{fig:SignalSimulated_05}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.7in]{SignalSimulated_06.png}
-        \caption{Circuito recortador con fuente de CD en $500~mV$ (simulado).}
+        \caption{Circuito recortador con fuente de CD en $500~\textnormal{mV}$ (simulado).}
         \label{fig:SignalSimulated_06}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.7in]{SignalSimulated_07.png}
-        \caption{Circuito recortador con fuente de CD en $1~V$ (simulado).}
+        \caption{Circuito recortador con fuente de CD en $1~\textnormal{V}$ (simulado).}
         \label{fig:SignalSimulated_07}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.7in]{SignalSimulated_08.png}
-        \caption{Circuito recortador con fuente de CD en $1.5~V$ (simulado).}
+        \caption{Circuito recortador con fuente de CD en $1.5~\textnormal{V}$ (simulado).}
         \label{fig:SignalSimulated_08}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.7in]{SignalSimulated_09.png}
-        \caption{Circuito recortador con fuente de CD en $2~V$ (simulado).}
+        \caption{Circuito recortador con fuente de CD en $2~\textnormal{V}$ (simulado).}
         \label{fig:SignalSimulated_09}
 \end{figure}
 
 Como se observa a los largo de todas las figuras presentadas anteriormente, el aumentar la magnitud de la fuente de CD
 genera que la señal de tensión vista desde la resistencia de carga vaya aumentando poco a poco, de cierta forma acercándose 
 a la señal de entrada. Seguidamente, se procede a invertir la conexión del diodo 1N914 para repetir el proceso de aumentar 
-la fuente de CD desde los $0~V$ hasta los $2~V$, con pasos de $500~mV$.
+la fuente de CD desde los $0~\textnormal{V}$ hasta los $2~\textnormal{V}$, con pasos de $500~\textnormal{mV}$.
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.7in]{SignalSimulated_10.png}
-        \caption{Circuito recortador con Diodo invertido y fuente de CD en $0~V$ (simulado).}
+        \caption{Circuito recortador con Diodo invertido y fuente de CD en $0~\textnormal{V}$ (simulado).}
         \label{fig:SignalSimulated_10}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.7in]{SignalSimulated_11.png}
-        \caption{Circuito recortador con Diodo invertido y fuente de CD en $500~mV$ (simulado).}
+        \caption{Circuito recortador con Diodo invertido y fuente de CD en $500~\textnormal{mV}$ (simulado).}
         \label{fig:SignalSimulated_11}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.7in]{SignalSimulated_12.png}
-        \caption{Circuito recortador con Diodo invertido y fuente de CD en $1~V$ (simulado).}
+        \caption{Circuito recortador con Diodo invertido y fuente de CD en $1~\textnormal{V}$ (simulado).}
         \label{fig:SignalSimulated_12}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.7in]{SignalSimulated_13.png}
-        \caption{Circuito recortador con Diodo invertido y fuente de CD en $1.5~V$ (simulado).}
+        \caption{Circuito recortador con Diodo invertido y fuente de CD en $1.5~\textnormal{V}$ (simulado).}
         \label{fig:SignalSimulated_13}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.7in]{SignalSimulated_14.png}
-        \caption{Circuito recortador con Diodo invertido y fuente de CD en $2~V$ (simulado).}
+        \caption{Circuito recortador con Diodo invertido y fuente de CD en $2~\textnormal{V}$ (simulado).}
         \label{fig:SignalSimulated_14}
 \end{figure}
 
@@ -285,35 +276,35 @@ que la polaridad del diodo se invirtió, la señal de salida se ve afectada de m
 De forma que ahora la señal vista por la carga, disminuye cada vez menos su magnitud con cada periodo completado.
 
 Finalmente, manteniendo el diodo invertido, se invierte además la polaridad de la fuente en CD, tal que ahora será como que si la fuente
-entregara valores de tensión negativos; de igual forma, se repite el proceso iterativo pero ahora desde los $0~V$ hasta los $-2~V$, con pasos de $500~mV$.
+entregara valores de tensión negativos; de igual forma, se repite el proceso iterativo pero ahora desde los $0~\textnormal{V}$ hasta los $-2~\textnormal{V}$, con pasos de $500~\textnormal{mV}$.
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.7in]{SignalSimulated_15.png}
-        \caption{Circuito recortador con Diodo invertido y fuente de CD en $0~V$ (simulado).}
+        \caption{Circuito recortador con Diodo invertido y fuente de CD en $0~\textnormal{V}$ (simulado).}
         \label{fig:SignalSimulated_15}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.7in]{SignalSimulated_16.png}
-        \caption{Circuito recortador con Diodo invertido y fuente de CD en $-500~mV$ (simulado).}
+        \caption{Circuito recortador con Diodo invertido y fuente de CD en $-500~\textnormal{mV}$ (simulado).}
         \label{fig:SignalSimulated_16}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.7in]{SignalSimulated_17.png}
-        \caption{Circuito recortador con Diodo invertido y fuente de CD en $-1~V$ (simulado).}
+        \caption{Circuito recortador con Diodo invertido y fuente de CD en $-1~\textnormal{V}$ (simulado).}
         \label{fig:SignalSimulated_17}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.7in]{SignalSimulated_18.png}
-        \caption{Circuito recortador con Diodo invertido y fuente de CD en $-1.5~V$ (simulado).}
+        \caption{Circuito recortador con Diodo invertido y fuente de CD en $-1.5~\textnormal{V}$ (simulado).}
         \label{fig:SignalSimulated_18}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.7in]{SignalSimulated_19.png}
-        \caption{Circuito recortador con Diodo invertido y fuente de CD en $-2~V$ (simulado).}
+        \caption{Circuito recortador con Diodo invertido y fuente de CD en $-2~\textnormal{V}$ (simulado).}
         \label{fig:SignalSimulated_19}
 \end{figure}
 
@@ -334,7 +325,7 @@ Primeramente, se muestran los valores reales de las resistencias utilizadas.
         \caption{Valores de resistencia utilizados}
         \begin{tabular}{ m{2cm} m{2cm} m{2cm} }
             \hline
-            Componente & Valor requerido ($k\Omega$) & Valor medido ($k\Omega$) \\ 
+            Componente & Valor requerido ($\textnormal{k}\Omega$) & Valor medido ($\textnormal{k}\Omega$) \\ 
             \hline
             $R_1$ & $10$ & $9.929~40$ \\ 
             $R_2$ & $1$ & $0.995~31$ \\
@@ -376,45 +367,45 @@ utilizando el circuito de la Fig. \ref{fig:recortador_conDiodo}, se obtienen las
         \label{fig:SignalExperimental_04}
 \end{figure}
 
-Ajustando el valor de la resistencia de carga a unos $10~k\Omega$, se obtienen las siguientes señales de entrada y salida para el circuito de la Fig. \ref{fig:recortador_conDiodo}.
+Ajustando el valor de la resistencia de carga a unos $10~\textnormal{k}\Omega$, se obtienen las siguientes señales de entrada y salida para el circuito de la Fig. \ref{fig:recortador_conDiodo}.
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.8in]{SignalExperimental_05.png}
-        \caption{Señales de entrada y salida del circuito recortador con Diodo, con $R_L=10~k\Omega$ (experimental).}
+        \caption{Señales de entrada y salida del circuito recortador con Diodo, con $R_L=10~\textnormal{k}\Omega$ (experimental).}
         \label{fig:SignalExperimental_05}
 \end{figure}
 
 Como se observa, la forma de las señales son muy similares a las mostradas en la Fig. \ref{fig:SignalSimulated_04}. Ahora, se utiliza el ciruito mostrado en la Fig. \ref{fig:recortador_conAjuste}, 
-con variaciones en la fuente de CD desde los $0~V$ hasta los $2~V$, con pasos de $500~mV$.
+con variaciones en la fuente de CD desde los $0~\textnormal{V}$ hasta los $2~\textnormal{V}$, con pasos de $500~\textnormal{mV}$.
 
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.8in]{SignalExperimental_06.png}
-        \caption{Circuito recortador con fuente de CD en $0~V$ (experimental).}
+        \caption{Circuito recortador con fuente de CD en $0~\textnormal{V}$ (experimental).}
         \label{fig:SignalExperimental_06}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.8in]{SignalExperimental_07.png}
-        \caption{Circuito recortador con fuente de CD en $500~mV$ (experimental).}
+        \caption{Circuito recortador con fuente de CD en $500~\textnormal{mV}$ (experimental).}
         \label{fig:SignalExperimental_07}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.8in]{SignalExperimental_08.png}
-        \caption{Circuito recortador con fuente de CD en $1~V$ (experimental).}
+        \caption{Circuito recortador con fuente de CD en $1~\textnormal{V}$ (experimental).}
         \label{fig:SignalExperimental_08}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.8in]{SignalExperimental_09.png}
-        \caption{Circuito recortador con fuente de CD en $1.5~V$ (experimental).}
+        \caption{Circuito recortador con fuente de CD en $1.5~\textnormal{V}$ (experimental).}
         \label{fig:SignalExperimental_09}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.8in]{SignalExperimental_10.png}
-        \caption{Circuito recortador con fuente de CD en $2~V$ (experimental).}
+        \caption{Circuito recortador con fuente de CD en $2~\textnormal{V}$ (experimental).}
         \label{fig:SignalExperimental_10}
 \end{figure}
 
@@ -426,65 +417,65 @@ Ahora, se repite el mismo proceso pero con la polaridad del diodo 1N914 invertid
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.8in]{SignalExperimental_11.png}
-        \caption{Circuito recortador con Diodo invertido y fuente de CD en $0~V$ (experimental).}
+        \caption{Circuito recortador con Diodo invertido y fuente de CD en $0~\textnormal{V}$ (experimental).}
         \label{fig:SignalExperimental_11}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.8in]{SignalExperimental_12.png}
-        \caption{Circuito recortador con Diodo invertido y fuente de CD en $500~mV$ (experimental).}
+        \caption{Circuito recortador con Diodo invertido y fuente de CD en $500~\textnormal{mV}$ (experimental).}
         \label{fig:SignalExperimental_12}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.8in]{SignalExperimental_13.png}
-        \caption{Circuito recortador con Diodo invertido y fuente de CD en $1~V$ (experimental).}
+        \caption{Circuito recortador con Diodo invertido y fuente de CD en $1~\textnormal{V}$ (experimental).}
         \label{fig:SignalExperimental_13}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.8in]{SignalExperimental_14.png}
-        \caption{Circuito recortador con Diodo invertido y fuente de CD en $1.5~V$ (experimental).}
+        \caption{Circuito recortador con Diodo invertido y fuente de CD en $1.5~\textnormal{V}$ (experimental).}
         \label{fig:SignalExperimental_14}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.8in]{SignalExperimental_15.png}
-        \caption{Circuito recortador con Diodo invertido y fuente de CD en $2~V$ (experimental).}
+        \caption{Circuito recortador con Diodo invertido y fuente de CD en $2~\textnormal{V}$ (experimental).}
         \label{fig:SignalExperimental_15}
 \end{figure}
 
 De igual forma, se observa un ligero aumento en valor mínimo que toma la señal de salida o señal rectificada.
-Luego, se modifica el circuito al invertir la polaridad de la fuente CD, haciendo que esta "entregue valores de tensión negativos".
-Repitiendo el proceso de variación iterativo de la fuente desde los $0~V$ hasta los $-2~V$, con pasos de $500~mV$.
+Luego, se modifica el circuito al invertir la polaridad de la fuente CD, haciendo que esta "brinde valores de tensión negativos".
+Repitiendo el proceso de variación iterativo de la fuente desde los $0~\textnormal{V}$ hasta los $-2~\textnormal{V}$, con pasos de $500~\textnormal{mV}$.
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.8in]{SignalExperimental_11.png}
-        \caption{Circuito recortador con Diodo invertido y fuente de CD en $0~V$ (experimental).}
+        \caption{Circuito recortador con Diodo invertido y fuente de CD en $0~\textnormal{V}$ (experimental).}
         \label{fig:SignalExperimental_16}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.8in]{SignalExperimental_16.png}
-        \caption{Circuito recortador con Diodo invertido y fuente de CD en $-500~mV$ (experimental).}
+        \caption{Circuito recortador con Diodo invertido y fuente de CD en $-500~\textnormal{mV}$ (experimental).}
         \label{fig:SignalExperimental_17}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.8in]{SignalExperimental_17.png}
-        \caption{Circuito recortador con Diodo invertido y fuente de CD en $-1~V$ (experimental).}
+        \caption{Circuito recortador con Diodo invertido y fuente de CD en $-1~\textnormal{V}$ (experimental).}
         \label{fig:SignalExperimental_18}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.8in]{SignalExperimental_18.png}
-        \caption{Circuito recortador con Diodo invertido y fuente de CD en $-1.5~V$ (experimental).}
+        \caption{Circuito recortador con Diodo invertido y fuente de CD en $-1.5~\textnormal{V}$ (experimental).}
         \label{fig:SignalExperimental_19}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[width=2.8in]{SignalExperimental_19.png}
-        \caption{Circuito recortador con Diodo invertido y fuente de CD en $-2~V$ (experimental).}
+        \caption{Circuito recortador con Diodo invertido y fuente de CD en $-2~\textnormal{V}$ (experimental).}
         \label{fig:SignalExperimental_20}
 \end{figure}
 
@@ -514,9 +505,6 @@ para entender el comportamiento de distintas ondas de salida fue cumplido exitos
 
 \section{}
 
- 
-% if you will not have a photo at all:
-% if you will not have a photo at all:
 \begin{IEEEbiographynophoto}{Matías A. Camacho Abarca}
         Estudiante del Instituto Tecnológico de Costa Rica en la carrerra de ingeniería en electrónica desde
         2023. Beneficiario de beca de excelencia académica por el Instituto Tecnológico de
@@ -539,8 +527,6 @@ para entender el comportamiento de distintas ondas de salida fue cumplido exitos
         
         Correo: juelizondo@estudiantec.cr
 \end{IEEEbiographynophoto}
-
-
 
 \bibliographystyle{IEEEtran}
 \bibliography{literatura}
