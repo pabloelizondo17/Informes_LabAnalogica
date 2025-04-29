@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.11)  28 APR 2025 18:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.11)  28 APR 2025 22:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -889,7 +889,13 @@ Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
  (C:\Users\matia\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
 File: csquotes.cfg 
-))
+)) (C:\Users\matia\AppData\Local\Programs\MiKTeX\tex/latex/was\upgreek.sty
+Package: upgreek 2003/02/12 v2.0 (WaS)
+Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
+\symugrf@m=\mathgroup10
+LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
+(Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -1044,252 +1050,124 @@ Package hyperref Info: Link coloring OFF on input line 20.
 
 LaTeX Warning: Citation `Boylestad' on page 1 undefined on input line 65.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 84.
+<./fig/Circ1.png, id=50, 734.745pt x 491.58656pt>
+File: ./fig/Circ1.png Graphic file (type png)
+<use ./fig/Circ1.png>
+Package pdftex.def Info: ./fig/Circ1.png  used on input line 79.
+(pdftex.def)             Requested size: 245.71754pt x 164.39935pt.
+
+Overfull \hbox (1.47556pt too wide) in paragraph at lines 79--80
+ [][] 
+ []
+
+<./fig/CIRC2.png, id=52, 602.25pt x 343.2825pt>
+File: ./fig/CIRC2.png Graphic file (type png)
+<use ./fig/CIRC2.png>
+Package pdftex.def Info: ./fig/CIRC2.png  used on input line 86.
+(pdftex.def)             Requested size: 245.71754pt x 140.06053pt.
+
+Overfull \hbox (1.47556pt too wide) in paragraph at lines 86--87
+ [][] 
+ []
+
+
+Underfull \vbox (badness 2158) has occurred while \output is active []
+
+ [1{C:/Users/matia/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
+
+
+ <./fig/Circ1.png>]
+<./fig/CIRC2_2.png, id=64, 472.76625pt x 576.65437pt>
+File: ./fig/CIRC2_2.png Graphic file (type png)
+<use ./fig/CIRC2_2.png>
+Package pdftex.def Info: ./fig/CIRC2_2.png  used on input line 93.
+(pdftex.def)             Requested size: 245.71754pt x 299.7212pt.
+
+Overfull \hbox (1.47556pt too wide) in paragraph at lines 93--94
+ [][] 
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 107.
 (C:\Users\matia\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 84.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 107.
  (C:\Users\matia\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 84.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 107.
  (C:\Users\matia\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+trsy on input line 84.
+LaTeX Font Info:    Trying to load font information for U+trsy on input line 107.
  (C:\Users\matia\AppData\Local\Programs\MiKTeX\tex/latex/trsym\utrsy.fd
 File: utrsy.fd 2000/06/25v1.0transformation symbol font definitions
-) [1{C:/Users/matia/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
-
-
-]
-<./fig/SignalSimulated_01.png, id=74, 247.689pt x 157.023pt>
-File: ./fig/SignalSimulated_01.png Graphic file (type png)
-<use ./fig/SignalSimulated_01.png>
-Package pdftex.def Info: ./fig/SignalSimulated_01.png  used on input line 176.
-(pdftex.def)             Requested size: 195.12877pt x 123.70177pt.
-<./fig/SignalSimulated_02.png, id=79, 250.974pt x 158.0085pt>
-File: ./fig/SignalSimulated_02.png Graphic file (type png)
-<use ./fig/SignalSimulated_02.png>
-Package pdftex.def Info: ./fig/SignalSimulated_02.png  used on input line 184.
-(pdftex.def)             Requested size: 195.12877pt x 122.85071pt.
-
-Underfull \vbox (badness 3375) has occurred while \output is active []
-
-<./fig/SignalSimulated_03.png, id=82, 248.6745pt x 157.023pt>
-File: ./fig/SignalSimulated_03.png Graphic file (type png)
-<use ./fig/SignalSimulated_03.png>
-Package pdftex.def Info: ./fig/SignalSimulated_03.png  used on input line 193.
-(pdftex.def)             Requested size: 195.12877pt x 123.213pt.
-<./fig/SignalSimulated_04.png, id=84, 249.3315pt x 157.023pt>
-File: ./fig/SignalSimulated_04.png Graphic file (type png)
-<use ./fig/SignalSimulated_04.png>
-Package pdftex.def Info: ./fig/SignalSimulated_04.png  used on input line 201.
-(pdftex.def)             Requested size: 195.12877pt x 122.88715pt.
-<./fig/SignalSimulated_05.png, id=86, 246.9225pt x 241.50224pt>
-File: ./fig/SignalSimulated_05.png Graphic file (type png)
-<use ./fig/SignalSimulated_05.png>
-Package pdftex.def Info: ./fig/SignalSimulated_05.png  used on input line 211.
-(pdftex.def)             Requested size: 195.12877pt x 190.84363pt.
-<./fig/SignalSimulated_06.png, id=87, 246.9225pt x 243.309pt>
-File: ./fig/SignalSimulated_06.png Graphic file (type png)
-<use ./fig/SignalSimulated_06.png>
-Package pdftex.def Info: ./fig/SignalSimulated_06.png  used on input line 218.
-(pdftex.def)             Requested size: 195.12877pt x 192.27141pt.
- [2 <./fig/SignalSimulated_01.png> <./fig/SignalSimulated_02.png> <./fig/SignalSimulated_03.png> <./fig/SignalSimulated_04.png>]
-<./fig/SignalSimulated_07.png, id=101, 260.172pt x 254.75175pt>
-File: ./fig/SignalSimulated_07.png Graphic file (type png)
-<use ./fig/SignalSimulated_07.png>
-Package pdftex.def Info: ./fig/SignalSimulated_07.png  used on input line 224.
-(pdftex.def)             Requested size: 195.12877pt x 191.0711pt.
-<./fig/SignalSimulated_08.png, id=102, 247.52475pt x 247.52475pt>
-File: ./fig/SignalSimulated_08.png Graphic file (type png)
-<use ./fig/SignalSimulated_08.png>
-Package pdftex.def Info: ./fig/SignalSimulated_08.png  used on input line 230.
-(pdftex.def)             Requested size: 195.12877pt x 195.13449pt.
-<./fig/SignalSimulated_09.png, id=103, 248.72925pt x 243.91125pt>
-File: ./fig/SignalSimulated_09.png Graphic file (type png)
-<use ./fig/SignalSimulated_09.png>
-Package pdftex.def Info: ./fig/SignalSimulated_09.png  used on input line 237.
-(pdftex.def)             Requested size: 195.12877pt x 191.35536pt.
-<./fig/SignalSimulated_10.png, id=104, 247.52475pt x 243.91125pt>
-File: ./fig/SignalSimulated_10.png Graphic file (type png)
-<use ./fig/SignalSimulated_10.png>
-Package pdftex.def Info: ./fig/SignalSimulated_10.png  used on input line 249.
-(pdftex.def)             Requested size: 195.12877pt x 192.28581pt.
-<./fig/SignalSimulated_11.png, id=105, 259.56975pt x 255.354pt>
-File: ./fig/SignalSimulated_11.png Graphic file (type png)
-<use ./fig/SignalSimulated_11.png>
-Package pdftex.def Info: ./fig/SignalSimulated_11.png  used on input line 256.
-(pdftex.def)             Requested size: 195.12877pt x 191.9631pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3 <./fig/SignalSimulated_05.png> <./fig/SignalSimulated_06.png> <./fig/SignalSimulated_07.png> <./fig/SignalSimulated_08.png> <./fig/SignalSimulated_09.png>]
-<./fig/SignalSimulated_12.png, id=120, 252.945pt x 251.7405pt>
-File: ./fig/SignalSimulated_12.png Graphic file (type png)
-<use ./fig/SignalSimulated_12.png>
-Package pdftex.def Info: ./fig/SignalSimulated_12.png  used on input line 262.
-(pdftex.def)             Requested size: 195.12877pt x 194.20184pt.
-<./fig/SignalSimulated_13.png, id=121, 251.13824pt x 249.3315pt>
-File: ./fig/SignalSimulated_13.png Graphic file (type png)
-<use ./fig/SignalSimulated_13.png>
-Package pdftex.def Info: ./fig/SignalSimulated_13.png  used on input line 268.
-(pdftex.def)             Requested size: 195.12877pt x 193.73209pt.
-<./fig/CIRC2_2.png, id=122, 472.76625pt x 576.65437pt>
-File: ./fig/CIRC2_2.png Graphic file (type png)
-<use ./fig/CIRC2_2.png>
-Package pdftex.def Info: ./fig/CIRC2_2.png  used on input line 274.
-(pdftex.def)             Requested size: 195.12877pt x 238.01364pt.
-<./fig/CIRC2.png, id=123, 602.25pt x 343.2825pt>
-File: ./fig/CIRC2.png Graphic file (type png)
-<use ./fig/CIRC2.png>
-Package pdftex.def Info: ./fig/CIRC2.png  used on input line 287.
-(pdftex.def)             Requested size: 195.12877pt x 111.225pt.
-<./fig/C1111.png, id=124, 533.484pt x 320.178pt>
-File: ./fig/C1111.png Graphic file (type png)
-<use ./fig/C1111.png>
-Package pdftex.def Info: ./fig/C1111.png  used on input line 294.
-(pdftex.def)             Requested size: 238.49121pt x 143.13585pt.
- [4 <./fig/SignalSimulated_10.png> <./fig/SignalSimulated_11.png> <./fig/SignalSimulated_12.png> <./fig/SignalSimulated_13.png> <./fig/CIRC2_2.png>]
-<./fig/C2222.png, id=140, 533.922pt x 315.798pt>
-File: ./fig/C2222.png Graphic file (type png)
-<use ./fig/C2222.png>
-Package pdftex.def Info: ./fig/C2222.png  used on input line 300.
-(pdftex.def)             Requested size: 238.49121pt x 141.06212pt.
-<./fig/2C2222.png, id=141, 533.922pt x 315.798pt>
-File: ./fig/2C2222.png Graphic file (type png)
-<use ./fig/2C2222.png>
-Package pdftex.def Info: ./fig/2C2222.png  used on input line 306.
-(pdftex.def)             Requested size: 238.49121pt x 141.06212pt.
-<./fig/Circ1.png, id=142, 734.745pt x 491.58656pt>
-File: ./fig/Circ1.png Graphic file (type png)
-<use ./fig/Circ1.png>
-Package pdftex.def Info: ./fig/Circ1.png  used on input line 312.
-(pdftex.def)             Requested size: 195.12877pt x 130.54735pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 334--335
-[]|\T1/phv/m/n/8 Valor me-di-do
+)
+Overfull \hbox (5.15366pt too wide) in paragraph at lines 107--120
+ [][] 
  []
 
-<./fig/SignalExperimental_01.png, id=144, 803.0pt x 504.88625pt>
-File: ./fig/SignalExperimental_01.png Graphic file (type png)
-<use ./fig/SignalExperimental_01.png>
-Package pdftex.def Info: ./fig/SignalExperimental_01.png  used on input line 348.
-(pdftex.def)             Requested size: 202.35622pt x 127.23045pt.
-<./fig/SignalExperimental_02.png, id=145, 803.0pt x 504.88625pt>
-File: ./fig/SignalExperimental_02.png Graphic file (type png)
-<use ./fig/SignalExperimental_02.png>
-Package pdftex.def Info: ./fig/SignalExperimental_02.png  used on input line 354.
-(pdftex.def)             Requested size: 202.35622pt x 127.23045pt.
-[5 <./fig/CIRC2.png> <./fig/C1111.png> <./fig/C2222.png> <./fig/2C2222.png> <./fig/Circ1.png>]
-<./fig/SignalExperimental_03.png, id=166, 803.0pt x 504.88625pt>
-File: ./fig/SignalExperimental_03.png Graphic file (type png)
-<use ./fig/SignalExperimental_03.png>
-Package pdftex.def Info: ./fig/SignalExperimental_03.png  used on input line 364.
-(pdftex.def)             Requested size: 202.35622pt x 127.23045pt.
-<./fig/SignalExperimental_04.png, id=167, 803.0pt x 504.88625pt>
-File: ./fig/SignalExperimental_04.png Graphic file (type png)
-<use ./fig/SignalExperimental_04.png>
-Package pdftex.def Info: ./fig/SignalExperimental_04.png  used on input line 371.
-(pdftex.def)             Requested size: 202.35622pt x 127.23045pt.
+
+Overfull \hbox (5.15366pt too wide) in paragraph at lines 126--137
+ [][] 
+ []
+
+
+Underfull \vbox (badness 1231) has occurred while \output is active []
+
+
+Overfull \hbox (5.15366pt too wide) in paragraph at lines 143--154
+ [][] 
+ []
+
+
+Overfull \hbox (5.15366pt too wide) in paragraph at lines 160--169
+ [][] 
+ []
+
+
+Overfull \hbox (5.15366pt too wide) in paragraph at lines 175--186
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `fig:recortador_sinDiodo' on page 2 undefined on input line 188.
+
+<./fig/C1111.png, id=65, 533.484pt x 320.178pt>
+File: ./fig/C1111.png Graphic file (type png)
+<use ./fig/C1111.png>
+Package pdftex.def Info: ./fig/C1111.png  used on input line 192.
+(pdftex.def)             Requested size: 245.71754pt x 147.47418pt.
+
+Overfull \hbox (1.47556pt too wide) in paragraph at lines 192--193
+ [][] 
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<./fig/SignalExperimental_05.png, id=169, 803.0pt x 504.88625pt>
-File: ./fig/SignalExperimental_05.png Graphic file (type png)
-<use ./fig/SignalExperimental_05.png>
-Package pdftex.def Info: ./fig/SignalExperimental_05.png  used on input line 379.
-(pdftex.def)             Requested size: 202.35622pt x 127.23045pt.
-<./fig/SignalExperimental_06.png, id=172, 803.0pt x 504.88625pt>
-File: ./fig/SignalExperimental_06.png Graphic file (type png)
-<use ./fig/SignalExperimental_06.png>
-Package pdftex.def Info: ./fig/SignalExperimental_06.png  used on input line 389.
-(pdftex.def)             Requested size: 202.35622pt x 127.23045pt.
-<./fig/SignalExperimental_07.png, id=173, 803.0pt x 504.88625pt>
-File: ./fig/SignalExperimental_07.png Graphic file (type png)
-<use ./fig/SignalExperimental_07.png>
-Package pdftex.def Info: ./fig/SignalExperimental_07.png  used on input line 395.
-(pdftex.def)             Requested size: 202.35622pt x 127.23045pt.
-<./fig/SignalExperimental_08.png, id=174, 803.0pt x 504.88625pt>
-File: ./fig/SignalExperimental_08.png Graphic file (type png)
-<use ./fig/SignalExperimental_08.png>
-Package pdftex.def Info: ./fig/SignalExperimental_08.png  used on input line 401.
-(pdftex.def)             Requested size: 202.35622pt x 127.23045pt.
+ [2 <./fig/CIRC2.png> <./fig/CIRC2_2.png>]
+<./fig/C2222.png, id=84, 533.922pt x 315.798pt>
+File: ./fig/C2222.png Graphic file (type png)
+<use ./fig/C2222.png>
+Package pdftex.def Info: ./fig/C2222.png  used on input line 199.
+(pdftex.def)             Requested size: 245.71754pt x 145.3363pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (1.47556pt too wide) in paragraph at lines 199--200
+ [][] 
+ []
 
- [6 <./fig/SignalExperimental_01.png (PNG copy)> <./fig/SignalExperimental_02.png (PNG copy)> <./fig/SignalExperimental_03.png (PNG copy)> <./fig/SignalExperimental_04.png (PNG copy)> <./fig/SignalExperimental_05.png (PNG copy)> <./fig/SignalExperimental_06.png (PNG copy)>]
-<./fig/SignalExperimental_09.png, id=185, 803.0pt x 504.88625pt>
-File: ./fig/SignalExperimental_09.png Graphic file (type png)
-<use ./fig/SignalExperimental_09.png>
-Package pdftex.def Info: ./fig/SignalExperimental_09.png  used on input line 407.
-(pdftex.def)             Requested size: 202.35622pt x 127.23045pt.
-<./fig/SignalExperimental_10.png, id=186, 803.0pt x 504.88625pt>
-File: ./fig/SignalExperimental_10.png Graphic file (type png)
-<use ./fig/SignalExperimental_10.png>
-Package pdftex.def Info: ./fig/SignalExperimental_10.png  used on input line 413.
-(pdftex.def)             Requested size: 202.35622pt x 127.23045pt.
-<./fig/SignalExperimental_11.png, id=187, 803.0pt x 504.88625pt>
-File: ./fig/SignalExperimental_11.png Graphic file (type png)
-<use ./fig/SignalExperimental_11.png>
-Package pdftex.def Info: ./fig/SignalExperimental_11.png  used on input line 425.
-(pdftex.def)             Requested size: 202.35622pt x 127.23045pt.
-<./fig/SignalExperimental_12.png, id=188, 803.0pt x 504.88625pt>
-File: ./fig/SignalExperimental_12.png Graphic file (type png)
-<use ./fig/SignalExperimental_12.png>
-Package pdftex.def Info: ./fig/SignalExperimental_12.png  used on input line 431.
-(pdftex.def)             Requested size: 202.35622pt x 127.23045pt.
-<./fig/SignalExperimental_13.png, id=189, 803.0pt x 504.88625pt>
-File: ./fig/SignalExperimental_13.png Graphic file (type png)
-<use ./fig/SignalExperimental_13.png>
-Package pdftex.def Info: ./fig/SignalExperimental_13.png  used on input line 437.
-(pdftex.def)             Requested size: 202.35622pt x 127.23045pt.
-<./fig/SignalExperimental_14.png, id=190, 803.0pt x 504.88625pt>
-File: ./fig/SignalExperimental_14.png Graphic file (type png)
-<use ./fig/SignalExperimental_14.png>
-Package pdftex.def Info: ./fig/SignalExperimental_14.png  used on input line 443.
-(pdftex.def)             Requested size: 202.35622pt x 127.23045pt.
-<./fig/SignalExperimental_15.png, id=191, 803.0pt x 504.88625pt>
-File: ./fig/SignalExperimental_15.png Graphic file (type png)
-<use ./fig/SignalExperimental_15.png>
-Package pdftex.def Info: ./fig/SignalExperimental_15.png  used on input line 449.
-(pdftex.def)             Requested size: 202.35622pt x 127.23045pt.
+<./fig/2C2222.png, id=85, 533.922pt x 315.798pt>
+File: ./fig/2C2222.png Graphic file (type png)
+<use ./fig/2C2222.png>
+Package pdftex.def Info: ./fig/2C2222.png  used on input line 206.
+(pdftex.def)             Requested size: 245.71754pt x 145.3363pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (1.47556pt too wide) in paragraph at lines 206--207
+ [][] 
+ []
 
- [7 <./fig/SignalExperimental_07.png (PNG copy)> <./fig/SignalExperimental_08.png (PNG copy)> <./fig/SignalExperimental_09.png (PNG copy)> <./fig/SignalExperimental_10.png (PNG copy)> <./fig/SignalExperimental_11.png (PNG copy)> <./fig/SignalExperimental_12.png (PNG copy)> <./fig/SignalExperimental_13.png (PNG copy)>]
-File: ./fig/SignalExperimental_11.png Graphic file (type png)
-<use ./fig/SignalExperimental_11.png>
-Package pdftex.def Info: ./fig/SignalExperimental_11.png  used on input line 459.
-(pdftex.def)             Requested size: 202.35622pt x 127.23045pt.
-<./fig/SignalExperimental_16.png, id=204, 803.0pt x 504.88625pt>
-File: ./fig/SignalExperimental_16.png Graphic file (type png)
-<use ./fig/SignalExperimental_16.png>
-Package pdftex.def Info: ./fig/SignalExperimental_16.png  used on input line 465.
-(pdftex.def)             Requested size: 202.35622pt x 127.23045pt.
-<./fig/SignalExperimental_17.png, id=205, 803.0pt x 504.88625pt>
-File: ./fig/SignalExperimental_17.png Graphic file (type png)
-<use ./fig/SignalExperimental_17.png>
-Package pdftex.def Info: ./fig/SignalExperimental_17.png  used on input line 471.
-(pdftex.def)             Requested size: 202.35622pt x 127.23045pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-<./fig/SignalExperimental_18.png, id=206, 803.0pt x 504.88625pt>
-File: ./fig/SignalExperimental_18.png Graphic file (type png)
-<use ./fig/SignalExperimental_18.png>
-Package pdftex.def Info: ./fig/SignalExperimental_18.png  used on input line 477.
-(pdftex.def)             Requested size: 202.35622pt x 127.23045pt.
-<./fig/SignalExperimental_19.png, id=207, 803.0pt x 504.88625pt>
-File: ./fig/SignalExperimental_19.png Graphic file (type png)
-<use ./fig/SignalExperimental_19.png>
-Package pdftex.def Info: ./fig/SignalExperimental_19.png  used on input line 483.
-(pdftex.def)             Requested size: 202.35622pt x 127.23045pt.
- [8 <./fig/SignalExperimental_14.png (PNG copy)> <./fig/SignalExperimental_15.png (PNG copy)> <./fig/SignalExperimental_16.png (PNG copy)> <./fig/SignalExperimental_17.png (PNG copy)> <./fig/SignalExperimental_18.png (PNG copy)> <./fig/SignalExperimental_19.png (PNG copy)>] (Informe_Lab8.bbl
+(Informe_Lab8.bbl
 
 Informe_Lab8.bbl:24: LaTeX Error: Something's wrong--perhaps a missing \item.
 
@@ -1306,7 +1184,7 @@ If that doesn't work, type  X <return>  to quit.
 \tf@thm=\write5
 \openout5 = `Informe_Lab8.thm'.
 
- [9] (Informe_Lab8.aux
+ [3 <./fig/C1111.png> <./fig/C2222.png> <./fig/2C2222.png>] (Informe_Lab8.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 )
@@ -1319,20 +1197,20 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Informe_Lab8.out' has not changed.
-(rerunfilecheck)             Checksum: 29B879BC37C16701EE9D603A0F96DE7B;1777.
+(rerunfilecheck)             Checksum: AEF5F40154736AF034C0B17BEA216717;1659.
  ) 
 Here is how much of TeX's memory you used:
- 50092 strings out of 474486
- 1201763 string characters out of 5743755
- 1966542 words of memory out of 5000000
- 71735 multiletter control sequences out of 15000+600000
- 696934 words of font info for 183 fonts, out of 8000000 for 9000
+ 48873 strings out of 474486
+ 1161975 string characters out of 5743755
+ 1949542 words of memory out of 5000000
+ 70549 multiletter control sequences out of 15000+600000
+ 696613 words of font info for 187 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 99i,15n,101p,958b,1118s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Informe_Lab8.pdf (9 pages, 2242660 bytes).
+ 99i,13n,101p,958b,1098s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on Informe_Lab8.pdf (3 pages, 455949 bytes).
 PDF statistics:
- 297 PDF objects out of 1000 (max. 8388607)
- 67 named destinations out of 1000 (max. 500000)
- 299 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 154 PDF objects out of 1000 (max. 8388607)
+ 28 named destinations out of 1000 (max. 500000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
