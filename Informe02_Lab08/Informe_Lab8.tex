@@ -175,7 +175,7 @@ dentro de estos están los circuitos recortadores, en donde los diodos juegan un
         \node[njfet](Q1)at ($(DRAIN) + (0,-1)$){};
     
     \draw
-    (DRAIN)--++(3.5,0) to [R, l^=$R_{L}$]++(0,-3.3) node[ground] (GR) {}
+    (DRAIN)--++(3.5,0)node[label={[font=\footnotesize]above:$V_{sal}$}] {} to [R, l^=$R_{L}$]++(0,-3.3) node[ground] (GR) {}
     (DRAIN) -- (Q1.D)
     (Q1.S) to [R, l^=$R_{S3}$] ++(0,-2.5) coordinate(NEXT)
     (Q1.G) --++(-1,0) to ++(0,-4.5) coordinate(gud)
