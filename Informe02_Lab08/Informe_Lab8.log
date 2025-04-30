@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.11)  28 APR 2025 22:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.11)  29 APR 2025 20:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1167,7 +1167,25 @@ Overfull \hbox (1.47556pt too wide) in paragraph at lines 206--207
  [][] 
  []
 
-(Informe_Lab8.bbl
+
+Overfull \hbox (5.15366pt too wide) in paragraph at lines 215--230
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (5.15366pt too wide) in paragraph at lines 236--251
+ [][] 
+ []
+
+
+Overfull \hbox (5.15366pt too wide) in paragraph at lines 257--275
+ [][] 
+ []
+
+[3 <./fig/C1111.png> <./fig/C2222.png> <./fig/2C2222.png>] (Informe_Lab8.bbl
 
 Informe_Lab8.bbl:24: LaTeX Error: Something's wrong--perhaps a missing \item.
 
@@ -1184,7 +1202,9 @@ If that doesn't work, type  X <return>  to quit.
 \tf@thm=\write5
 \openout5 = `Informe_Lab8.thm'.
 
- [3 <./fig/C1111.png> <./fig/C2222.png> <./fig/2C2222.png>] (Informe_Lab8.aux
+ [4
+
+] (Informe_Lab8.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 )
@@ -1197,20 +1217,20 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Informe_Lab8.out' has not changed.
-(rerunfilecheck)             Checksum: AEF5F40154736AF034C0B17BEA216717;1659.
+(rerunfilecheck)             Checksum: A5012936478A2B4A17BA1A1B18E66E81;1659.
  ) 
 Here is how much of TeX's memory you used:
- 48873 strings out of 474486
- 1161975 string characters out of 5743755
- 1949542 words of memory out of 5000000
- 70549 multiletter control sequences out of 15000+600000
+ 48880 strings out of 474486
+ 1162053 string characters out of 5743755
+ 1958542 words of memory out of 5000000
+ 70552 multiletter control sequences out of 15000+600000
  696613 words of font info for 187 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  99i,13n,101p,958b,1098s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Informe_Lab8.pdf (3 pages, 455949 bytes).
+<C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on Informe_Lab8.pdf (4 pages, 480801 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
- 28 named destinations out of 1000 (max. 500000)
+ 172 PDF objects out of 1000 (max. 8388607)
+ 32 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
