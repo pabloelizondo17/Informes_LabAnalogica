@@ -134,7 +134,7 @@ dentro de estos están los circuitos recortadores, en donde los diodos juegan un
     (Q.S) node[shift={(-0.3,0)}] {$S$} to[R, l^=$R_S$] ++(0,-2.5) node[ground] (GR) {}
     
     (Q.D) node[shift={(-0.3,0)}] {$D$} --++(0,2.8) node[vcc] {$+15~\mathrm{V}$}
-    (Q.D) to[C, l^=$C_2$] ++(5,0) node (D') {} node[label={[font=\footnotesize]above:$V_{sal}$}] {} to[R, l^=$R_L$] ++(0,-3) node[ground] (GR) {}
+    (Q.D) to[curved capacitor, l^=$C_2$] ++(5,0) node (D') {} node[label={[font=\footnotesize]above:$V_{sal}$}] {} to[R, l^=$R_L$] ++(0,-3) node[ground] (GR) {}
     (Q.G) node[shift={(0,0.4)}] {$G$} -- ++(-1,0) node[inner sep=0, outer sep=-1] (G') {} node[label={[font=\footnotesize]above:$V_{ent}$}] {} to[R, l_=$R_G$] ++(0,-3.3) node[ground] (GR) {}
     (G') to[C, l_=$C_1$] ++(-4,0) node (c1_out) {} to[sV, l_=$\mathrm{V_{s}}$] ++(0,-3.3) node[ground] (GR) {}
     
