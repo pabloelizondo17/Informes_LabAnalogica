@@ -1,3 +1,4 @@
+% !TeX root = Informe_Lab8.tex
 \documentclass[journal]{IEEEtran}
 %
 \usepackage{instructivo}  
@@ -34,12 +35,14 @@
 
 
 \begin{abstract}
-El objetivo del experimento fue construir circuitos recortadores para entender el comportamiento de la onda de salida
-teniendo en cuenta distintos casos de polarización. Se logró comprobar el comportamiento teórico esperado de los circuitos a través de un análisis visual.
+Este experimento pretendió analizar el comportamiento de dos topologías ya conocidas en amplificadores de señales; pero esta vez haciendo uso de
+transistores de efecto de campo (JFETs). Para llevarlo a cabo, se contruyeron tres circuitos diferentes, el primero con una topología de 
+fuente común, el segundo con una topología de drenador común y el tercero presenta una modificación que consiste en agregar una fuente de corriente.
+Logrando así, analizar el comportamiento de las señales en CD y CA para cada uno de los circuitos. 
 \end{abstract}
 
 \begin{IEEEkeywords}
-Diodo, tensión, corriente, junta, ruptura.
+JFETs, polarización, ganancia, tensión, corriente.
 \end{IEEEkeywords}
 
 
@@ -47,29 +50,29 @@ Diodo, tensión, corriente, junta, ruptura.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introducción}
 
-\IEEEPARstart{U}n diodo es un componente electrónico de dos terminales que permite el flujo de corriente en una dirección y lo bloquea en la otra. Está formado por la unión de dos materiales semiconductores con diferente tipo de dopaje: tipo p y tipo n.
+\IEEEPARstart{E}l transistor de efecto de campo, también conocido como JFET, trabaja con una unión PN
+polarizada de manera inversa (con tensiones negativas). Cuando se le aplica un voltaje $V_{\text{DD}}$, se genera 
+una tensión entre el drenaje y la fuente, lo cual induce corriente desde el drenaje hasta la fuente. La forma en la 
+que se controla la cantidad corriente $I_{\text{D}}$ en el transistor, consiste en variar la resistencia del transistor
+al variar el ancho del canal, el cual se modifica debido a la región de empobrecimiento a lo largo de la unión PN;
+dicha región de empobecimiento, aparece al polarizar en inversa las uniones compuerta y fuente ($V_{\text{GS}}$)~\cite{Floyd}.
 
-El material tipo p se forma al dopar semiconductores como el silicio o el germanio con impurezas de tres electrones de valencia, como el boro, lo que genera una abundancia de huecos (cargas positivas). Por otro lado, el material tipo n se obtiene al agregar impurezas con cinco electrones de valencia, como el fósforo o el arsénico, lo que introduce electrones libres en la estructura.
+Cabe aclarar, que en un JFET la corriente de drenaje $I_{\text{D}}$ va disminuyendo conforme la tension $V_{\text{GS}}$ se
+hace cada vez más negativa, pues con esto se ensancha la región de empobrecimiento, hasta que se llega a la tensión 
+de corte en donde el canal se cierra por completo.
 
-Al unir ambos materiales en un solo dispositivo, se forma una unión pn, la base del funcionamiento del diodo. Idealmente, los huecos pueden moverse desde la región p hacia la región n, siguiendo la dirección de la corriente convencional. Sin embargo, si se intenta conducir corriente en la dirección opuesta (de n a p), la unión pn presenta una barrera que impide el flujo, actuando como un interruptor unidireccional.
-
-Estas propiedades aplican para diodos ideales, ya que en la realidad los diodos tienen un rango de tensión necesario para que la
-corriente fluya significativamente en polarización directa (corriente convencional de p a n). Los diodos incluso tienen corriente en polarización inversa (corriente convencional de n a p), aunque esta suele ser despreciable. Sin embargo, para efectos de análisis, se pueden 
-generalizar muchas de estas propiedades.
-
-Uno de los usos más particulares de los diodos es en circuitos recortadores. Estos se aprovechan del funcionamiento del diodo como una fuente de tensión en polarización directa
-y como un nodo abierto en inversa. En estas aplicaciones, se elimina partes de la señal de entrada por encima o por debajo de cierto nivel de voltaje. Existen dos configuraciones principales: en serie y en paralelo.  
-
-En los recortadores en paralelo, el diodo se coloca en paralelo con la carga y conduce solo cuando la señal supera un voltaje específico. Si el diodo está sin polarización externa, su umbral de conducción es aproximadamente 0 V en el modelo ideal.   
-
-Estos circuitos son útiles para limitar amplitudes y proteger componentes sensibles frente a sobrevoltajes. En el modelo ideal, el diodo cambia instantáneamente entre conducción y no conducción, lo que permite una representación simplificada del comportamiento del circuito. \cite{Boylestad}
-
+Con este tipo de transistores, también se pueden construir amplificadores con topologías fuente común y 
+drenador común, bajo una idea muy similar a como se trabaja con transistores MOSFET y BJT. Esto es lo que se pretendió 
+aplicar en el laboratorio; para el caso de los amplificadores de fuente común, la señal de entrada se aplica en la compuerta
+y la salida es tomada directamente desde el drenador del transistor; en el caso de la topología drenador común, lo que cambia
+es que ahora la salida será tomada desde la fuente del transistor~\cite{Floyd}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Circuitos recortadores con Diodos}
-Como una forma de entender el funcionamiento de estos dispositivos (los Diodos), se pueden diseñar circuitos que tengan amplias aplicaciones prácticas en la vida cotidiana,
-dentro de estos están los circuitos recortadores, en donde los diodos juegan un papel muy importante y es posible establecer diferentes configuraciones según se requiera. 
+\section{Cirtuitos amplificadores con JFETs}
+Se presenta a continuación los tres circuitos construidos para la elaboración de este laboratorio. Al igual que en
+amplificadores con otros tipos de transistores, con JFETs también se añaden capacitores de acople para filtrar
+cualquier valor de CD que se desee eliminar, así como capacitores de bypass para mejorar la ganancia del amplificador.
 
 
 \subsection{Circuitos de Medición}
@@ -378,24 +381,34 @@ dentro de estos están los circuitos recortadores, en donde los diodos juegan un
     \end{table}
 
 \subsection{Análisis de Resultados}
-Los resultados obtenidos en el laboratorio fueron satisfactorios, lo que permite considerar la experiencia como provechosa. 
-Entre los aspectos más destacados se encuentra el mayor entendimiento de la estructura general de cada uno de los circuitos utilizados, 
-resultado de la interacción directa con componentes y dispositivos físicos. Esto resalta la importancia de prestar atención a las conexiones y a los 
-métodos de medición para garantizar la recolección de datos de manera correcta y precisa.
+Con la intención de lograr los mejores resultados posibles, se trató de ajustar los 
+valores reales de los componentes a utilizar, de forma que coincidieran lo más cerca con
+los valores teóricos necesarios, aunque siempre existen ciertas discrepancias.
 
-Los datos y gráficas obtenidos reflejaron el comportamiento esperado y previamente estudiado en el entorno de simulación. 
-Sin embargo, se observaron algunas variaciones en ciertas magnitudes del circuito (al momento de alterar ciertas conexiones por razones varias), 
-lo que requirió ajustes en los parámetros de medición de los equipos. 
-Para mejorar la interpretación de los resultados, es necesario considerar posibles alteraciones en las señales debidas a escalas de 
-representación o interferencias de ruido.
+Para el primer circuito, se observan ciertas diferencias algo significativas entre los valores
+recolectados, con respecto a lo esperado teóricamente; esto en cuanto a parámetros de polarización. 
+Si se observan las señales de entrada y salida en este primer circuito, se puede notar una leve diferencia
+en la señal de salida respecto a lo esperado (es menor al valor teórico); además, en el semiciclo negativo
+existe un recorte en la onda, que provoca una alteración en la ganancia durante ese tiempo, esto se intentó 
+solucionar durante la práctica de laboratorio; no obstante, se debía de bajar considerablemente la señal de entrada.
+
+Para el caso de la topología de drenador común, la amplitud de la señal de salida es ligeramente mayor a lo esperado, 
+su fase es correcta y en este caso, no presenta recortes extraños que alteren la ganancia. 
+
+Por último, el tercer circuito (modificado con una fuente de corriente), es el que presenta menos margen de error
+en cuanto a la diferencia entre valores experimentales y valores teóricos. La señal de salida es prácticamente
+igual a la esperada, incluso en este caso, presenta un desfase de cero grados tal cual debe ser. 
 
 \section{Conclusiones}
-Se puede apreciar que las ondas de salida obtenidas durante el experimento siguieron la forma que se esperaba. A pesar de pequeñas diferencias
-en cuanto a las amplitudes esperadas, el comportamiento general de la onda fue el calculado, por lo que el objetivo del experimento de construir circuitos recortadores
-para entender el comportamiento de distintas ondas de salida fue cumplido exitosamente.
+Fue posible obtener los valores teóricos de polarización en CD y los parámetros en CA para la topología de fuente
+común con JFETs, comprobando así que la señal de salida en esta topología, presenta un desfase cercano a los $180^\circ$
+con respecto a la señal de entrada, igual a como ocurre con otros transistores.
+
+Al igual que con la topología de drenador común, con fuente común se expusieron los parámetros de polarización en CD
+y el análisis de los valores para las señales de CA. En esta configuración, no existe desfase significativo entre las 
+señales de entrada y salida, según se esperaba. 
 
 \appendices
-
 \section{}
 \vspace{-1.2cm}
 \begin{IEEEbiographynophoto}{Matías A. Camacho Abarca}
@@ -421,7 +434,12 @@ para entender el comportamiento de distintas ondas de salida fue cumplido exitos
         Correo: juelizondo@estudiantec.cr
 \end{IEEEbiographynophoto}
 
-\bibliographystyle{IEEEtran}
-\bibliography{literatura}
+%%\bibliographystyle{IEEEtran}
+%%\bibliography{literatura}
+
+\begin{thebibliography}{11}
+    \bibitem{Floyd}
+    Thomas L. Floyd, \emph{Dispositivos Electrónicos}, 8ª edición, Pearson, 2008.
+\end{thebibliography}
 
 \end{document}
