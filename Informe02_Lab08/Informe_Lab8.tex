@@ -1,4 +1,5 @@
 % !TeX root = Informe_Lab8.tex
+% !TeX root = Informe_Lab8.tex
 \documentclass[journal]{IEEEtran}
 %
 \usepackage{instructivo}  
@@ -39,9 +40,14 @@ Este experimento pretendió analizar el comportamiento de dos topologías ya con
 transistores de efecto de campo (JFETs). Para llevarlo a cabo, se contruyeron tres circuitos diferentes, el primero con una topología de 
 fuente común, el segundo con una topología de drenador común y el tercero presenta una modificación que consiste en agregar una fuente de corriente.
 Logrando así, analizar el comportamiento de las señales en CD y CA para cada uno de los circuitos. 
+Este experimento pretendió analizar el comportamiento de dos topologías ya conocidas en amplificadores de señales; pero esta vez haciendo uso de
+transistores de efecto de campo (JFETs). Para llevarlo a cabo, se contruyeron tres circuitos diferentes, el primero con una topología de 
+fuente común, el segundo con una topología de drenador común y el tercero presenta una modificación que consiste en agregar una fuente de corriente.
+Logrando así, analizar el comportamiento de las señales en CD y CA para cada uno de los circuitos. 
 \end{abstract}
 
 \begin{IEEEkeywords}
+JFETs, polarización, ganancia, tensión, corriente.
 JFETs, polarización, ganancia, tensión, corriente.
 \end{IEEEkeywords}
 
@@ -50,6 +56,22 @@ JFETs, polarización, ganancia, tensión, corriente.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introducción}
 
+\IEEEPARstart{E}l transistor de efecto de campo, también conocido como JFET, trabaja con una unión PN
+polarizada de manera inversa (con tensiones negativas). Cuando se le aplica un voltaje $V_{\text{DD}}$, se genera 
+una tensión entre el drenaje y la fuente, lo cual induce corriente desde el drenaje hasta la fuente. La forma en la 
+que se controla la cantidad corriente $I_{\text{D}}$ en el transistor, consiste en variar la resistencia del transistor
+al variar el ancho del canal, el cual se modifica debido a la región de empobrecimiento a lo largo de la unión PN;
+dicha región de empobecimiento, aparece al polarizar en inversa las uniones compuerta y fuente ($V_{\text{GS}}$)~\cite{Floyd}.
+
+Cabe aclarar, que en un JFET la corriente de drenaje $I_{\text{D}}$ va disminuyendo conforme la tension $V_{\text{GS}}$ se
+hace cada vez más negativa, pues con esto se ensancha la región de empobrecimiento, hasta que se llega a la tensión 
+de corte en donde el canal se cierra por completo.
+
+Con este tipo de transistores, también se pueden construir amplificadores con topologías fuente común y 
+drenador común, bajo una idea muy similar a como se trabaja con transistores MOSFET y BJT. Esto es lo que se pretendió 
+aplicar en el laboratorio; para el caso de los amplificadores de fuente común, la señal de entrada se aplica en la compuerta
+y la salida es tomada directamente desde el drenador del transistor; en el caso de la topología drenador común, lo que cambia
+es que ahora la salida será tomada desde la fuente del transistor~\cite{Floyd}.
 \IEEEPARstart{E}l transistor de efecto de campo, también conocido como JFET, trabaja con una unión PN
 polarizada de manera inversa (con tensiones negativas). Cuando se le aplica un voltaje $V_{\text{DD}}$, se genera 
 una tensión entre el drenaje y la fuente, lo cual induce corriente desde el drenaje hasta la fuente. La forma en la 
@@ -409,6 +431,13 @@ con respecto a la señal de entrada, igual a como ocurre con otros transistores.
 Al igual que con la topología de drenador común, con fuente común se expusieron los parámetros de polarización en CD
 y el análisis de los valores para las señales de CA. En esta configuración, no existe desfase significativo entre las 
 señales de entrada y salida, según se esperaba. 
+Fue posible obtener los valores teóricos de polarización en CD y los parámetros en CA para la topología de fuente
+común con JFETs, comprobando así que la señal de salida en esta topología, presenta un desfase cercano a los $180^\circ$
+con respecto a la señal de entrada, igual a como ocurre con otros transistores.
+
+Al igual que con la topología de drenador común, con fuente común se expusieron los parámetros de polarización en CD
+y el análisis de los valores para las señales de CA. En esta configuración, no existe desfase significativo entre las 
+señales de entrada y salida, según se esperaba. 
 
 \appendices
 \section{}
@@ -436,6 +465,13 @@ señales de entrada y salida, según se esperaba.
         Correo: juelizondo@estudiantec.cr
 \end{IEEEbiographynophoto}
 
+%%\bibliographystyle{IEEEtran}
+%%\bibliography{literatura}
+
+\begin{thebibliography}{11}
+    \bibitem{Floyd}
+    Thomas L. Floyd, \emph{Dispositivos Electrónicos}, 8ª edición, Pearson, 2008.
+\end{thebibliography}
 %%\bibliographystyle{IEEEtran}
 %%\bibliography{literatura}
 
