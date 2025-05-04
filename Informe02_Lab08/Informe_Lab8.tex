@@ -97,7 +97,7 @@ dentro de estos están los circuitos recortadores, en donde los diodos juegan un
     
     (Q.S) node[shift={(-0.3,0)}] {$S$} to[R, l^=$R_S$] ++(0,-2.5) node[ground] (GR) {}
     
-    (Q.D) node[shift={(-0.3,0)}] {$D$} to[R, l^=$R_D$, *-] ++(0,2.8) node[vcc] {$+15~\mathrm{V}$}
+    (Q.D) node[shift={(-0.3,0)}] {$D$} to[R, l^=$R_D$] ++(0,2.8) node[vcc] {$+15~\mathrm{V}$}
     (Q.D) to[C, l^=$C_3$] ++(5,0) node (D') {} node[label={[font=\footnotesize]above:$V_{sal}$}] {} to[R, l^=$R_L$] ++(0,-3) node[ground] (GR) {}
     (Q.G) node[shift={(0,0.4)}] {$G$} -- ++(-1,0) node[inner sep=0, outer sep=-1] (G') {} node[label={[font=\footnotesize]above:$V_{ent}$}] {} to[R, l_=$R_G$] ++(0,-3.3) node[ground] (GR) {}
     (G') to[C, l_=$C_1$] ++(-4,0) node (c1_out) {} to[sV, l_=$\mathrm{V_{s}}$] ++(0,-3.3) node[ground] (GR) {}
@@ -110,7 +110,7 @@ dentro de estos están los circuitos recortadores, en donde los diodos juegan un
     \label{c111111111}
 \end{figure}
 
-\begin{circuitikz}[scale=0.5]
+\begin{circuitikz}[scale=0.6]
     \ctikzset{voltage/american plus/.initial={}, voltage/american minus/.initial={}}
 
 %		%Grid
@@ -131,12 +131,12 @@ dentro de estos están los circuitos recortadores, en donde los diodos juegan un
     % Circuit
     \draw
     
-    (Q.S) node[shift={(-0.3,0)}] {$S$} to[R, l^=$R_S$] ++(0,-2.5) node[ground] (GR) {}
+    (Q.S) node[shift={(-0.3,0)}] {$S$}--++(0,-1) to[R, l^=$R_S$] ++(0,-2.5) node[ground] (GR) {}
     
-    (Q.D) node[shift={(-0.3,0)}] {$D$} --++(0,2.8) node[vcc] {$+15~\mathrm{V}$}
-    (Q.D) to[curved capacitor, l^=$C_2$] ++(5,0) node (D') {} node[label={[font=\footnotesize]above:$V_{sal}$}] {} to[R, l^=$R_L$] ++(0,-3) node[ground] (GR) {}
-    (Q.G) node[shift={(0,0.4)}] {$G$} -- ++(-1,0) node[inner sep=0, outer sep=-1] (G') {} node[label={[font=\footnotesize]above:$V_{ent}$}] {} to[R, l_=$R_G$] ++(0,-3.3) node[ground] (GR) {}
-    (G') to[C, l_=$C_1$] ++(-4,0) node (c1_out) {} to[sV, l_=$\mathrm{V_{s}}$] ++(0,-3.3) node[ground] (GR) {}
+    (Q.D) node[shift={(-0.3,0)}] {$D$} --++(0,2.1) node[vcc] {$+15~\mathrm{V}$}
+    (Q.S) to[curved capacitor, l^=$C_2$] ++(3,0) node (D') {} node[label={[font=\footnotesize]above:$V_{sal}$}] {} to[R, l^=$R_L$] ++(0,-3) node[ground] (GR) {}
+    (Q.G) node[shift={(0,0.4)}] {$G$} -- ++(-1,0) node[inner sep=0, outer sep=-1] (G') {} node[label={[font=\footnotesize]above:$V_{ent}$}] {} --++(0,-1) to[R, l_=$R_G$] ++(0,-3.3) node[ground] (GR) {}
+    (G') to[C, l_=$C_1$] ++(-4,0) node (c1_out) {}--++(0,-1) to[sV, l_=$\mathrm{V_{s}}$] ++(0,-3.3) node[ground] (GR) {}
     
 \end{circuitikz}
 \begin{figure}[H]
@@ -145,10 +145,10 @@ dentro de estos están los circuitos recortadores, en donde los diodos juegan un
     \label{c1111111d11}
 \end{figure}
 
-\vspace{2cm}
+\vspace{1cm}
 
 
-\begin{circuitikz}[scale=0.5]
+\begin{circuitikz}[scale=0.6]
     \ctikzset{voltage/american plus/.initial={}, voltage/american minus/.initial={}}
 
 %		%Grid
@@ -178,8 +178,7 @@ dentro de estos están los circuitos recortadores, en donde los diodos juegan un
     (DRAIN)--++(3.5,0)node[label={[font=\footnotesize]above:$V_{sal}$}] {} to [R, l^=$R_{L}$]++(0,-3.3) node[ground] (GR) {}
     (DRAIN) -- (Q1.D)
     (Q1.S) to [R, l^=$R_{S3}$] ++(0,-2.5) coordinate(NEXT)
-    (Q1.G) --++(-1,0) to ++(0,-4.5) coordinate(gud)
-    (gud) --++(2.95,0)
+    (Q1.G) --++(-1,0) to ++(0,-3.5) to ++(2.63,0)
     (NEXT) --++(0,-1) node[vcc, rotate=180] {} coordinate(labeeel);
     \node at ($(NEXT) + (0,-2.6)$) {$-15~\mathrm{V}$};
     \draw
