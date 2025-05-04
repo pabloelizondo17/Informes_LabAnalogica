@@ -70,9 +70,10 @@ es que ahora la salida será tomada desde la fuente del transistor~\cite{Floyd}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Cirtuitos amplificadores con JFETs}
-Se presenta a continuación los tres circuitos construidos para la elaboración de este laboratorio. Al igual que en
+Se presenta a continuación los tres circuitos construidos para la elaboración de este laboratorio. Los transistores utilizados fueron JFETs 2N5458. Al igual que en
 amplificadores con otros tipos de transistores, con JFETs también se añaden capacitores de acople para filtrar
 cualquier valor de CD que se desee eliminar, así como capacitores de bypass para mejorar la ganancia del amplificador.
+Se midieron los parámetros de polarización en corriente directa y parámetros en corriente alterna.
 
 
 \subsection{Circuitos de Medición}
@@ -109,7 +110,7 @@ cualquier valor de CD que se desee eliminar, así como capacitores de bypass par
 \end{circuitikz}
 \begin{figure}[H]
     \centering
-    \caption{Circuito de medición 1}
+    \caption{Circuito de medición 1, $V_{s}=150~\mathrm{mV}$ a 1~kHz}
     \label{c111111111}
 \end{figure}
 
@@ -144,7 +145,7 @@ cualquier valor de CD que se desee eliminar, así como capacitores de bypass par
 \end{circuitikz}
 \begin{figure}[H]
     \centering
-    \caption{Circuito de medición 2}
+    \caption{Circuito de medición 2, $V_{s}=150~\mathrm{mV}$ a 1~kHz}
     \label{c1111111d11}
 \end{figure}
 
@@ -192,7 +193,7 @@ cualquier valor de CD que se desee eliminar, así como capacitores de bypass par
 \end{circuitikz}   
 \begin{figure}[H]
     \centering
-    \caption{Circuito de medición 3}
+    \caption{Circuito de medición 3, $V_{s}=150~\mathrm{mV}$ a 1~kHz}
     \label{c11111eee1111}
 \end{figure}
 
@@ -216,10 +217,10 @@ cualquier valor de CD que se desee eliminar, así como capacitores de bypass par
             Componente & Valor requerido & Valor medido\\ 
             \hline
             \centering
-            $R_G$ & $1$ $\mathrm{M}\Omega$ & $1.014~22$ $\mathrm{M}\Omega$ \\ 
-            $R_D$ & $6.8$ $\mathrm{k}\Omega$ & $6.752~56$ $\mathrm{k}\Omega$ \\
-            $R_S$ & $56$ $\Omega$ & $62.8178$ $\Omega$ \\
-            $R_L$ & $10$ $\mathrm{k}\Omega$ & $10.062~09$ $\mathrm{k}\Omega$ \\
+            $R_G$ ($\mathrm{M}\Omega$) & $1$  & $1.014~22$  \\ 
+            $R_D$ ($\mathrm{k}\Omega$) & $6.8$  & $6.752~56$  \\
+            $R_S$ ($\Omega$) & $56$  & $62.8178$  \\
+            $R_L$ ($\mathrm{k}\Omega$) & $10$  & $10.062~09$ \\
             \hline
         \end{tabular}
         \label{tabla1}
@@ -231,12 +232,12 @@ cualquier valor de CD que se desee eliminar, así como capacitores de bypass par
         \caption{Valores de capacitores utilizados en el circuito 1}
         \begin{tabular}{ >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm} }
                 \hline
-            Componente & Valor requerido & Valor medido\\ 
+            Componente & Valor requerido ($\upmu\mathrm{F}$) & Valor medido ($\upmu\mathrm{F}$)\\ 
             \hline
             \centering
-            $C_1$ & $0.1$ $\upmu\mathrm{F}$ & $0.1047$ $\upmu\mathrm{F}$ \\ 
-            $C_2$ & $10$ $\upmu\mathrm{F}$ & $9.587$ $\upmu\mathrm{F}$ \\
-            $C_3$ & $1$ $\upmu\mathrm{F}$ & $1.0383$ $\upmu\mathrm{F}$ \\
+            $C_1$ & $0.1$  & $0.1047$  \\ 
+            $C_2$ & $10$  & $9.587$ \\
+            $C_3$ & $1$  & $1.0383$ \\
             \hline
         \end{tabular}
         \label{tabla2}
@@ -251,9 +252,9 @@ cualquier valor de CD que se desee eliminar, así como capacitores de bypass par
             Componente & Valor requerido & Valor medido\\ 
             \hline
             \centering
-            $R_G$ & $1$ $\mathrm{M}\Omega$ & $1.014~22$ $\mathrm{M}\Omega$ \\ 
-            $R_S$ & $1$ $\mathrm{k}\Omega$ & $0.997~459$ $\mathrm{k}\Omega$ \\
-            $R_L$ & $10$ $\mathrm{k}\Omega$ & $10.062~09$ $\mathrm{k}\Omega$ \\
+            $R_G$ ($\mathrm{M}\Omega$)& $1$  & $1.014~22$  \\ 
+            $R_S$ ($\mathrm{k}\Omega$) & $1$  & $0.997~459$  \\
+            $R_L$ ($\mathrm{k}\Omega$) & $10$  & $10.062~09$  \\
             \hline
         \end{tabular}
         \label{tabla3}
@@ -263,12 +264,12 @@ cualquier valor de CD que se desee eliminar, así como capacitores de bypass par
         \renewcommand{\arraystretch}{1.5}
         \caption{Valores de capacitores utilizados en el circuito 2}
         \centering
-        \begin{tabular}{ >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm} }
+        \begin{tabular}{ >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.65cm} >{\centering\arraybackslash}m{2.5cm} }
                 \hline
-            Componente & Valor requerido & Valor medido\\ 
+            Componente & Valor requerido ( $\upmu\mathrm{F}$) & Valor medido ( $\upmu\mathrm{F}$) \\ 
             \hline
-            $C_1$ & $0.1$ $\upmu\mathrm{F}$ & $0.1047$ $\upmu\mathrm{F}$ \\ 
-            $C_2$ & $10$ $\upmu\mathrm{F}$ & $9.587$ $\upmu\mathrm{F}$ \\
+            $C_1$ & $0.1$ & $0.1047$  \\ 
+            $C_2$ & $10$  & $9.587$  \\
             \hline
         \end{tabular}
         \label{tabla4}
@@ -282,10 +283,10 @@ cualquier valor de CD que se desee eliminar, así como capacitores de bypass par
                 \hline
             Componente & Valor requerido & Valor medido\\ 
             \hline
-            $R_G$ & $1$ $\mathrm{M}\Omega$ & $1.016~775$ $\mathrm{M}\Omega$ \\ 
-            $R_S1$ & $6.8$ $\mathrm{k}\Omega$ & $99.4067$ $\Omega$ \\
-            $R_{S3}$ & $56$ $\Omega$ & $217.40$ $\Omega$ \\
-            $R_L$ & $10$ $\mathrm{k}\Omega$ & $10.050~23$ $\mathrm{k}\Omega$ \\
+            $R_G$ ($\mathrm{M}\Omega$) & $1$  & $1.016~775$  \\ 
+            $R_S1$ ($\mathrm{k}\Omega$) & $6.8$  & $99.4067$  \\
+            $R_{S3}$ ($\Omega$) & $56$  & $217.40$  \\
+            $R_L$ ($\mathrm{k}\Omega$) & $10$  & $10.050~23$  \\
             \hline
         \end{tabular}
         \label{tabla5}
@@ -321,19 +322,21 @@ cualquier valor de CD que se desee eliminar, así como capacitores de bypass par
                 \hline
             Parámetro & Valor teórico & Valor medido\\ 
             \hline
-            $V_G$ & $6.763~52$ $\upmu\mathrm{V}$ & $209.6$ $\upmu\mathrm{V}$ \\ 
-            $V_S$ & $71.312~86$ $\mathrm{mV}$ & $116.153$ $\mathrm{mV}$ \\
-            $V_D$ & $6.340~58$ $\mathrm{V}$ & $4.052~65$ $\mathrm{V}$ \\
-            $I_D$ & $1.273~44$ $\mathrm{mA}$ & $1.873~44$ $\mathrm{mA}$ \\
-            $V_{ent}$ & $0.149~891$ $\mathrm{V}$ & $0.155$ $\mathrm{V}$ \\ 
-            $V_{sal}$ & $4.635~36$ $\mathrm{V}$ & $3.9$ $\mathrm{V}$ \\
+            $V_G$ ($\upmu\mathrm{V}$) & $6.763~52$  & $209.6$  \\ 
+            $V_S$ ($\mathrm{mV}$) & $71.312~86$  & $116.153$  \\
+            $V_D$ ($\mathrm{V}$) & $6.340~58$  & $4.052~65$  \\
+            $I_D$ ($\mathrm{mA}$) & $1.273~44$  & $1.873~44$  \\
+            $V_{ent}$ ($\mathrm{V}$) & $0.149~891$  & $0.155$ \\ 
+            $V_{sal}$ ($\mathrm{V}$) & $4.635~36$ & $3.9$  \\
             $A_v$ & $30.2577$ & $25.16$ \\
-            $Desfase$ & $-172.818~68^{\circ}$  & $-177.27^{\circ}$ \\
+            $Desfase$ ($^\circ$) & $-172.818~68$  & $-177.27$ \\
             \hline
         \end{tabular}
         \label{tabla6}
     \end{table}
 
+
+    
 \begin{table}[H]
         \renewcommand{\arraystretch}{1.5}
         \caption{Mediciones del circuito 2}
@@ -342,14 +345,14 @@ cualquier valor de CD que se desee eliminar, así como capacitores de bypass par
                 \hline
             Parámetro & Valor teórico & Valor medido\\ 
             \hline
-            $V_G$ & $15.571~90$ $\upmu\mathrm{V}$ & $0.0018$ $\mathrm{V}$ \\
-            $V_S$ & $209.402~04$ $\mathrm{mV}$ & $330.190$ $\mathrm{mV}$ \\
-            $V_D$ & $15$ $\mathrm{V}$ & $15.0059$ $\mathrm{V}$ \\
-            $I_D$ & $209.403~01$ $\upmu\mathrm{A}$ & $330.121$ $\upmu\mathrm{A}$ \\
-            $V_{ent}$ & $0.149~949$ $\mathrm{V}$ & $0.157$ $\mathrm{V}$ \\ 
-            $V_{sal}$ & $0.128~361$ $\mathrm{V}$ & $0.1265$ $\mathrm{V}$ \\
+            $V_G$ ($\upmu\mathrm{V}$) & $15.571~90$  & $1800$ $\mathrm{V}$ \\
+            $V_S$ ($\mathrm{mV}$) & $209.402~04$  & $330.190$  \\
+            $V_D$ ($\mathrm{V}$) & $15$  & $15.0059$ \\
+            $I_D$ ($\upmu\mathrm{A}$) & $209.403~01$  & $330.121$  \\
+            $V_{ent}$ ($\mathrm{V}$) & $0.149~949$  & $0.157$  \\ 
+            $V_{sal}$ ($\mathrm{V}$) & $0.128~361$  & $0.1265$  \\
             $A_v$ & $0.856$ & $0.806$ \\
-            $Desfase$ & $0.09^{\circ}$  & $1.19^{\circ}$ \\
+            $Desfase$ ($^\circ$) & $0.09$  & $1.19$ \\
             \hline
         \end{tabular}
         \label{tabla7}
@@ -363,17 +366,17 @@ cualquier valor de CD que se desee eliminar, así como capacitores de bypass par
                 \hline
             Parámetro & Valor teórico & Valor medido\\ 
             \hline
-            $V_{G(Q1)}$ & $0$ $\mathrm{V}$ & $0.0018$ $\mathrm{V}$ \\ 
-            $V_{S(Q1)}$ & $157.676~13$ $\mathrm{mV}$ & $160.81$ $\mathrm{mV}$ \\
-            $V_{D(Q1)}$ & $15$ $\mathrm{V}$ & $15.0059$ $\mathrm{V}$ \\
-            $V_{G(Q2)}$ & $-15.571~90$ $\mathrm{V}$ & $-15.0056$ $\mathrm{V}$ \\ 
-            $V_{S(Q2)}$ & $-14.842~32$ $\mathrm{V}$ & $-14.7695$ $\mathrm{V}$ \\ 
-            $V_{D(Q2)}$ & $0$ $\mathrm{V}$ & $0.0018$ $\mathrm{V}$ \\ 
-            $I_D$ & $716.380$ $\upmu\mathrm{A}$ & $975.100$ $\upmu\mathrm{A}$ \\
-            $V_{ent}$ & $0.15$ $\mathrm{V}$ & $0.157$ $\mathrm{V}$ \\ 
-            $V_{sal}$ & $0.1448$ $\mathrm{V}$ & $0.151$ $\mathrm{V}$ \\
+            $V_{G(Q1)}$ ($\mathrm{V}$) & $0$  & $0.0018$  \\ 
+            $V_{S(Q1)}$ ($\mathrm{mV}$) & $157.676~13$  & $160.81$  \\
+            $V_{D(Q1)}$ ($\mathrm{V}$) & $15$  & $15.0059$  \\
+            $V_{G(Q2)}$ ($\mathrm{V}$) & $-15.571~90$  & $-15.0056$  \\ 
+            $V_{S(Q2)}$ ($\mathrm{V}$) & $-14.842~32$  & $-14.7695$  \\ 
+            $V_{D(Q2)}$ ($\mathrm{V}$)& $0$  & $0.0018$  \\ 
+            $I_D$ ($\upmu\mathrm{A}$) & $716.380$  & $975.100$  \\
+            $V_{ent}$ ($\mathrm{V}$) & $0.15$  & $0.157$  \\ 
+            $V_{sal}$ ($\mathrm{V}$) & $0.1448$  & $0.151$  \\
             $A_v$ & $0.965$ & $0.962$ \\
-            $Desfase$ & $0^{\circ}$  & $0^{\circ}$ \\
+            $Desfase$ ($^\circ$) & $0^{\circ}$  & $0^{\circ}$ \\
             \hline
         \end{tabular}
         \label{tabla8}
@@ -391,7 +394,7 @@ en la señal de salida respecto a lo esperado (es menor al valor teórico); adem
 existe un recorte en la onda, que provoca una alteración en la ganancia durante ese tiempo, esto se intentó 
 solucionar durante la práctica de laboratorio; no obstante, se debía de bajar considerablemente la señal de entrada.
 
-Para el caso de la topología de drenador común, la amplitud de la señal de salida es ligeramente mayor a lo esperado, 
+Para el caso de la topología de drenador común, la amplitud de la señal de salida es de un valor muy cercano al teórico, 
 su fase es correcta y en este caso, no presenta recortes extraños que alteren la ganancia. 
 
 Por último, el tercer circuito (modificado con una fuente de corriente), es el que presenta menos margen de error
