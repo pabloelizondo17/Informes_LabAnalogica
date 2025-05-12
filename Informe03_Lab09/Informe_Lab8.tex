@@ -1,0 +1,477 @@
+% !TeX root = Informe_Lab8.tex
+% !TeX root = Informe_Lab8.tex
+\documentclass[journal]{IEEEtran}
+%
+\usepackage{instructivo}  
+\graphicspath{{./}{./fig/}}
+
+\usepackage{circuitikz}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[skip=5pt]{caption}
+\usepackage{flafter}
+\usepackage{needspace}
+\usepackage{csquotes}
+\usepackage{upgreek}
+
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\renewcommand\IEEEkeywordsname{Palabras clave}
+
+\begin{document}
+\title{Topologías de amplificadores de fuente común y de drenador común con JFETs}
+
+
+\author{Juan~P.~Elizondo~Espinoza,~\IEEEmembership{Estudiante,~TEC}
+        y~Matías~A.~Camacho~Abarca,~\IEEEmembership{Estudiante,~TEC.}
+}
+
+
+\markboth{TEC.~EL-3215 Laboratorio de Electrónica Analógica, IS~2025}%
+{EL3215 Laboratorio de Electrónica Analógica}
+
+
+\maketitle
+
+
+\begin{abstract}
+Este experimento pretendió analizar el comportamiento de dos topologías ya conocidas en amplificadores de señales; pero esta vez haciendo uso de
+transistores de efecto de campo (JFETs). Para llevarlo a cabo, se contruyeron tres circuitos diferentes, el primero con una topología de 
+fuente común, el segundo con una topología de drenador común y el tercero presenta una modificación que consiste en agregar una fuente de corriente.
+Logrando así, analizar el comportamiento de las señales en CD y CA para cada uno de los circuitos. 
+Este experimento pretendió analizar el comportamiento de dos topologías ya conocidas en amplificadores de señales; pero esta vez haciendo uso de
+transistores de efecto de campo (JFETs). Para llevarlo a cabo, se contruyeron tres circuitos diferentes, el primero con una topología de 
+fuente común, el segundo con una topología de drenador común y el tercero presenta una modificación que consiste en agregar una fuente de corriente.
+Logrando así, analizar el comportamiento de las señales en CD y CA para cada uno de los circuitos. 
+\end{abstract}
+
+\begin{IEEEkeywords}
+JFETs, polarización, ganancia, tensión, corriente.
+\end{IEEEkeywords}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introducción}
+
+\IEEEPARstart{E}l transistor de efecto de campo, también conocido como JFET, trabaja con una unión PN
+polarizada de manera inversa (con tensiones negativas). Cuando se le aplica un voltaje $V_{\text{DD}}$, se genera 
+una tensión entre el drenaje y la fuente, lo cual induce corriente desde el drenaje hasta la fuente. La forma en la 
+que se controla la cantidad corriente $I_{\text{D}}$ en el transistor, consiste en variar la resistencia del transistor
+al variar el ancho del canal, el cual se modifica debido a la región de empobrecimiento a lo largo de la unión PN;
+dicha región de empobecimiento, aparece al polarizar en inversa las uniones compuerta y fuente ($V_{\text{GS}}$)~\cite{Floyd}.
+
+Cabe aclarar, que en un JFET la corriente de drenaje $I_{\text{D}}$ va disminuyendo conforme la tension $V_{\text{GS}}$ se
+hace cada vez más negativa, pues con esto se ensancha la región de empobrecimiento, hasta que se llega a la tensión 
+de corte en donde el canal se cierra por completo.
+
+Con este tipo de transistores, también se pueden construir amplificadores con topologías fuente común y 
+drenador común, bajo una idea muy similar a como se trabaja con transistores MOSFET y BJT. Esto es lo que se pretendió 
+aplicar en el laboratorio; para el caso de los amplificadores de fuente común, la señal de entrada se aplica en la compuerta
+y la salida es tomada directamente desde el drenador del transistor; en el caso de la topología drenador común, lo que cambia
+es que ahora la salida será tomada desde la fuente del transistor~\cite{Floyd}.
+\IEEEPARstart{E}l transistor de efecto de campo, también conocido como JFET, trabaja con una unión PN
+polarizada de manera inversa (con tensiones negativas). Cuando se le aplica un voltaje $V_{\text{DD}}$, se genera 
+una tensión entre el drenaje y la fuente, lo cual induce corriente desde el drenaje hasta la fuente. La forma en la 
+que se controla la cantidad corriente $I_{\text{D}}$ en el transistor, consiste en variar la resistencia del transistor
+al variar el ancho del canal, el cual se modifica debido a la región de empobrecimiento a lo largo de la unión PN;
+dicha región de empobecimiento, aparece al polarizar en inversa las uniones compuerta y fuente ($V_{\text{GS}}$)~\cite{Floyd}.
+
+Cabe aclarar, que en un JFET la corriente de drenaje $I_{\text{D}}$ va disminuyendo conforme la tension $V_{\text{GS}}$ se
+hace cada vez más negativa, pues con esto se ensancha la región de empobrecimiento, hasta que se llega a la tensión 
+de corte en donde el canal se cierra por completo.
+
+Con este tipo de transistores, también se pueden construir amplificadores con topologías fuente común y 
+drenador común, bajo una idea muy similar a como se trabaja con transistores MOSFET y BJT. Esto es lo que se pretendió 
+aplicar en el laboratorio; para el caso de los amplificadores de fuente común, la señal de entrada se aplica en la compuerta
+y la salida es tomada directamente desde el drenador del transistor; en el caso de la topología drenador común, lo que cambia
+es que ahora la salida será tomada desde la fuente del transistor~\cite{Floyd}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Cirtuitos amplificadores con JFETs}
+Se presenta a continuación los tres circuitos construidos para la elaboración de este laboratorio. Los transistores utilizados fueron JFETs 2N5458. Al igual que en
+amplificadores con otros tipos de transistores, con JFETs también se añaden capacitores de acople para filtrar
+cualquier valor de CD que se desee eliminar, así como capacitores de bypass para mejorar la ganancia del amplificador.
+Se midieron los parámetros de polarización en corriente directa y parámetros en corriente alterna.
+
+
+\subsection{Circuitos de Medición}
+
+\begin{circuitikz}[scale=0.6]
+    \ctikzset{voltage/american plus/.initial={}, voltage/american minus/.initial={}}
+
+%		%Grid
+%		\draw[thin, dotted] (0,0) grid (\nu,\nu);
+%		\foreach \i in {1,...,\nu}
+%		{
+%			\node at (\i,-2ex) {\i};	
+%		}
+%		\foreach \i in {1,...,\nu}
+%		{
+%			\node at (-2ex,\i) {\i};	
+%		}
+%		\node at (-2ex,-2ex) {0};
+    
+    %Coordinates
+    \node[njfet] (Q) at (-3,3) {};
+    
+    % Circuit
+    \draw
+    
+    (Q.S) node[shift={(-0.3,0)}] {$S$} to[R, l^=$R_S$] ++(0,-2.5) node[ground] (GR) {}
+    
+    (Q.D) node[shift={(-0.3,0)}] {$D$} to[R, l^=$R_D$] ++(0,2.8) node[vcc] {$+15~\mathrm{V}$}
+    (Q.D) to[C, l^=$C_3$] ++(5,0) node (D') {} node[label={[font=\footnotesize]above:$V_{sal}$}] {} to[R, l^=$R_L$] ++(0,-3) node[ground] (GR) {}
+    (Q.G) node[shift={(0,0.4)}] {$G$} -- ++(-1,0) node[inner sep=0, outer sep=-1] (G') {} node[label={[font=\footnotesize]above:$V_{ent}$}] {} to[R, l_=$R_G$] ++(0,-3.3) node[ground] (GR) {}
+    (G') to[C, l_=$C_1$] ++(-4,0) node (c1_out) {} to[sV, l_=$\mathrm{V_{s}}$] ++(0,-3.3) node[ground] (GR) {}
+    (Q.S) -- ++(2.5,0) to[curved capacitor, l^=$C_2$] ++(0,-2.5)node[ground] (GR) {}
+    
+\end{circuitikz}
+\begin{figure}[H]
+    \centering
+    \caption{Circuito de medición 1, $V_{s}=150~\mathrm{mV}$ a 1~kHz}
+    \label{c111111111}
+\end{figure}
+
+\begin{circuitikz}[scale=0.6]
+    \ctikzset{voltage/american plus/.initial={}, voltage/american minus/.initial={}}
+
+%		%Grid
+%		\draw[thin, dotted] (0,0) grid (\nu,\nu);
+%		\foreach \i in {1,...,\nu}
+%		{
+%			\node at (\i,-2ex) {\i};	
+%		}
+%		\foreach \i in {1,...,\nu}
+%		{
+%			\node at (-2ex,\i) {\i};	
+%		}
+%		\node at (-2ex,-2ex) {0};
+    
+    %Coordinates
+    \node[njfet] (Q) at (-3,3) {};
+    
+    % Circuit
+    \draw
+    
+    (Q.S) node[shift={(-0.3,0)}] {$S$}--++(0,-1) to[R, l^=$R_S$] ++(0,-2.5) node[ground] (GR) {}
+    
+    (Q.D) node[shift={(-0.3,0)}] {$D$} --++(0,2.1) node[vcc] {$+15~\mathrm{V}$}
+    (Q.S) to[curved capacitor, l^=$C_2$] ++(3,0) node (D') {} node[label={[font=\footnotesize]above:$V_{sal}$}] {} to[R, l^=$R_L$] ++(0,-3) node[ground] (GR) {}
+    (Q.G) node[shift={(0,0.4)}] {$G$} -- ++(-1,0) node[inner sep=0, outer sep=-1] (G') {} node[label={[font=\footnotesize]above:$V_{ent}$}] {} --++(0,-1) to[R, l_=$R_G$] ++(0,-3.3) node[ground] (GR) {}
+    (G') to[C, l_=$C_1$] ++(-4,0) node (c1_out) {}--++(0,-1) to[sV, l_=$\mathrm{V_{s}}$] ++(0,-3.3) node[ground] (GR) {}
+    
+\end{circuitikz}
+\begin{figure}[H]
+    \centering
+    \caption{Circuito de medición 2, $V_{s}=150~\mathrm{mV}$ a 1~kHz}
+    \label{c1111111d11}
+\end{figure}
+
+\vspace{1cm}
+
+
+\begin{circuitikz}[scale=0.6]
+    \ctikzset{voltage/american plus/.initial={}, voltage/american minus/.initial={}}
+
+%		%Grid
+%		\draw[thin, dotted] (0,0) grid (\nu,\nu);
+%		\foreach \i in {1,...,\nu}
+%		{
+%			\node at (\i,-2ex) {\i};	
+%		}
+%		\foreach \i in {1,...,\nu}
+%		{
+%			\node at (-2ex,\i) {\i};	
+%		}
+%		\node at (-2ex,-2ex) {0};
+    
+    %Coordinates
+    \node[njfet] (Q) at (-3,3) {};
+    
+    % Circuit
+    \draw
+
+    (Q.S) node[shift={(-0.3,0)}] {$S$} 
+        to[R, l^=$R_{S1}$] ++(0,-2.5) coordinate(FUc)
+        (FUc) --++(0,-1.3) to[vR, l^=$R_{S2}$] ++(0,-4) coordinate(DRAIN);
+        \node[njfet](Q1)at ($(DRAIN) + (0,-1)$){};
+    
+    \draw
+    (DRAIN)--++(3.5,0)node[label={[font=\footnotesize]above:$V_{sal}$}] {} to [R, l^=$R_{L}$]++(0,-3.3) node[ground] (GR) {}
+    (DRAIN) -- (Q1.D)
+    (Q1.S) to [R, l^=$R_{S3}$] ++(0,-2.5) coordinate(NEXT)
+    (Q1.G) --++(-1,0) to ++(0,-3.5) to ++(2.63,0)
+    (NEXT) --++(0,-1) node[vcc, rotate=180] {} coordinate(labeeel);
+    \node at ($(NEXT) + (0,-2.6)$) {$-15~\mathrm{V}$};
+    \draw
+    (Q.D) node[shift={(-0.3,0)}] {$D$} --++(0,2.8) node[vcc] {$+15~\mathrm{V}$}
+    (Q.G) node[shift={(0,0.4)}] {$G$} -- ++(-1,0) node[inner sep=0, outer sep=-1] (G') {} node[label={[font=\footnotesize]above:$V_{ent}$}] {} to[R, l_=$R_G$] ++(0,-3.3) node[ground] (GR) {}
+    (G') --++(-4,0) node (c1_out) {} to[sV, l_=$\mathrm{V_{s}}$] ++(0,-3.3) node[ground] (GR) {};
+    
+\end{circuitikz}   
+\begin{figure}[H]
+    \centering
+    \caption{Circuito de medición 3, $V_{s}=150~\mathrm{mV}$ a 1~kHz}
+    \label{c11111eee1111}
+\end{figure}
+
+
+\needspace{13\baselineskip}
+
+
+
+\needspace{5\baselineskip}
+
+
+\subsection{Resultados}
+
+\begin{table}[H]
+        \centering
+        \renewcommand{\arraystretch}{1.5}
+        \caption{Valores de resistencias utilizadas en el circuito 1}
+        \begin{tabular}{ >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm} }
+                \hline
+            \centering
+            Componente & Valor requerido & Valor medido\\ 
+            \hline
+            \centering
+            $R_G$ ($\mathrm{M}\Omega$) & $1$  & $1.014~22$  \\ 
+            $R_D$ ($\mathrm{k}\Omega$) & $6.8$  & $6.752~56$  \\
+            $R_S$ ($\Omega$) & $56$  & $62.8178$  \\
+            $R_L$ ($\mathrm{k}\Omega$) & $10$  & $10.062~09$ \\
+            \hline
+        \end{tabular}
+        \label{tabla1}
+    \end{table}
+    
+\begin{table}[H]
+        \centering
+        \renewcommand{\arraystretch}{1.5}
+        \caption{Valores de capacitores utilizados en el circuito 1}
+        \begin{tabular}{ >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm} }
+                \hline
+            Componente & Valor requerido ($\upmu\mathrm{F}$) & Valor medido ($\upmu\mathrm{F}$)\\ 
+            \hline
+            \centering
+            $C_1$ & $0.1$  & $0.1047$  \\ 
+            $C_2$ & $10$  & $9.587$ \\
+            $C_3$ & $1$  & $1.0383$ \\
+            \hline
+        \end{tabular}
+        \label{tabla2}
+    \end{table}    
+
+\begin{table}[H]
+        \centering
+        \renewcommand{\arraystretch}{1.5}
+        \caption{Valores de resistencias utilizadas en el circuito 2}
+        \begin{tabular}{ >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm} }
+                \hline
+            Componente & Valor requerido & Valor medido\\ 
+            \hline
+            \centering
+            $R_G$ ($\mathrm{M}\Omega$)& $1$  & $1.014~22$  \\ 
+            $R_S$ ($\mathrm{k}\Omega$) & $1$  & $0.997~459$  \\
+            $R_L$ ($\mathrm{k}\Omega$) & $10$  & $10.062~09$  \\
+            \hline
+        \end{tabular}
+        \label{tabla3}
+    \end{table}
+
+\begin{table}[H]
+        \renewcommand{\arraystretch}{1.5}
+        \caption{Valores de capacitores utilizados en el circuito 2}
+        \centering
+        \begin{tabular}{ >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.65cm} >{\centering\arraybackslash}m{2.5cm} }
+                \hline
+            Componente & Valor requerido ($\upmu\mathrm{F}$) & Valor medido ($\upmu\mathrm{F}$) \\ 
+            \hline
+            $C_1$ & $0.1$ & $0.1047$  \\ 
+            $C_2$ & $10$  & $9.587$  \\
+            \hline
+        \end{tabular}
+        \label{tabla4}
+    \end{table}
+
+\begin{table}[H]
+        \renewcommand{\arraystretch}{1.5}
+        \caption{Valores de resistencias utilizadas en el circuito 3}
+        \centering
+        \begin{tabular}{ >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm} }
+                \hline
+            Componente & Valor requerido & Valor medido\\ 
+            \hline
+            $R_G$ ($\mathrm{M}\Omega$) & $1$  & $1.016~775$  \\ 
+            $R_S1$ ($\mathrm{k}\Omega$) & $6.8$  & $99.4067$  \\
+            $R_{S3}$ ($\Omega$) & $56$  & $217.40$  \\
+            $R_L$ ($\mathrm{k}\Omega$) & $10$  & $10.050~23$  \\
+            \hline
+        \end{tabular}
+        \label{tabla5}
+    \end{table}
+
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=3.4in]{C1111.png}
+        \caption{$V_{sal}$ (en azul) y $V_{ent}$ (en rojo) obtenidos experimentalmente en el circuito 1 durante un periodo}
+        \label{fig:SignalExperimental_02}
+\end{figure}
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=3.4in]{C2222.png}
+        \caption{$V_{sal}$ (en azul) y $V_{ent}$ (en rojo) obtenidos experimentalmente en el circuito 2 durante un periodo}
+        \label{fig:SignalExperimental_03}
+\end{figure}
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=3.4in]{2C2222.png}
+        \caption{$V_{sal}$ (en azul) y $V_{ent}$ (en rojo) obtenidos experimentalmente en el circuito 3 durante un periodo}
+        \label{fig:SignalExperimental_04}
+\end{figure}
+
+\begin{table}[H]
+        \renewcommand{\arraystretch}{1.5}
+        \caption{Mediciones del circuito 1}
+        \centering
+        \begin{tabular}{ >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm} }
+                \hline
+            Parámetro & Valor teórico & Valor medido\\ 
+            \hline
+            $V_G$ ($\upmu\mathrm{V}$) & $6.763~52$  & $209.6$  \\ 
+            $V_S$ ($\mathrm{mV}$) & $71.312~86$  & $116.153$  \\
+            $V_D$ ($\mathrm{V}$) & $6.340~58$  & $4.052~65$  \\
+            $I_D$ ($\mathrm{mA}$) & $1.273~44$  & $1.873~44$  \\
+            $V_{ent}$ ($\mathrm{V}$) & $0.149~891$  & $0.155$ \\ 
+            $V_{sal}$ ($\mathrm{V}$) & $4.635~36$ & $3.9$  \\
+            $A_v$ & $30.2577$ & $25.16$ \\
+            $Desfase$ ($^\circ$) & $-172.818~68$  & $-177.27$ \\
+            \hline
+        \end{tabular}
+        \label{tabla6}
+    \end{table}
+
+
+    
+\begin{table}[H]
+        \renewcommand{\arraystretch}{1.5}
+        \caption{Mediciones del circuito 2}
+        \centering
+        \begin{tabular}{ >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm} }
+                \hline
+            Parámetro & Valor teórico & Valor medido\\ 
+            \hline
+            $V_G$ ($\upmu\mathrm{V}$) & $15.571~90$  & $1800$ $\mathrm{V}$ \\
+            $V_S$ ($\mathrm{mV}$) & $209.402~04$  & $330.190$  \\
+            $V_D$ ($\mathrm{V}$) & $15$  & $15.0059$ \\
+            $I_D$ ($\upmu\mathrm{A}$) & $209.403~01$  & $330.121$  \\
+            $V_{ent}$ ($\mathrm{V}$) & $0.149~949$  & $0.157$  \\ 
+            $V_{sal}$ ($\mathrm{V}$) & $0.128~361$  & $0.1265$  \\
+            $A_v$ & $0.856$ & $0.806$ \\
+            $Desfase$ ($^\circ$) & $0.09$  & $1.19$ \\
+            \hline
+        \end{tabular}
+        \label{tabla7}
+    \end{table}
+
+\begin{table}[H]
+        \renewcommand{\arraystretch}{1.5}
+        \caption{Mediciones del circuito 3}
+        \centering
+        \begin{tabular}{ >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm} }
+                \hline
+            Parámetro & Valor teórico & Valor medido\\ 
+            \hline
+            $V_{G(Q1)}$ ($\mathrm{V}$) & $0$  & $0.0018$  \\ 
+            $V_{S(Q1)}$ ($\mathrm{mV}$) & $157.676~13$  & $160.81$  \\
+            $V_{D(Q1)}$ ($\mathrm{V}$) & $15$  & $15.0059$  \\
+            $V_{G(Q2)}$ ($\mathrm{V}$) & $-15.571~90$  & $-15.0056$  \\ 
+            $V_{S(Q2)}$ ($\mathrm{V}$) & $-14.842~32$  & $-14.7695$  \\ 
+            $V_{D(Q2)}$ ($\mathrm{V}$)& $0$  & $0.0018$  \\ 
+            $I_D$ ($\upmu\mathrm{A}$) & $716.380$  & $975.100$  \\
+            $V_{ent}$ ($\mathrm{V}$) & $0.15$  & $0.157$  \\ 
+            $V_{sal}$ ($\mathrm{V}$) & $0.1448$  & $0.151$  \\
+            $A_v$ & $0.965$ & $0.962$ \\
+            $Desfase$ ($^\circ$) & $0^{\circ}$  & $0^{\circ}$ \\
+            \hline
+        \end{tabular}
+        \label{tabla8}
+    \end{table}
+
+\subsection{Análisis de Resultados}
+Con la intención de lograr los mejores resultados posibles, se trató de ajustar los 
+valores reales de los componentes a utilizar, de forma que coincidieran lo más cerca con
+los valores teóricos necesarios, aunque siempre existen ciertas discrepancias.
+
+Para el primer circuito, se observan ciertas diferencias algo significativas entre los valores
+recolectados, con respecto a lo esperado teóricamente; esto en cuanto a parámetros de polarización. 
+Si se observan las señales de entrada y salida en este primer circuito, se puede notar una leve diferencia
+en la señal de salida respecto a lo esperado (es menor al valor teórico); además, en el semiciclo negativo
+existe un recorte en la onda, que provoca una alteración en la ganancia durante ese tiempo, esto se intentó 
+solucionar durante la práctica de laboratorio; no obstante, se debía de bajar considerablemente la señal de entrada.
+
+Para el caso de la topología de drenador común, la amplitud de la señal de salida es de un valor muy cercano al teórico, 
+su fase es correcta y en este caso, no presenta recortes extraños que alteren la ganancia. 
+
+Por último, el tercer circuito (modificado con una fuente de corriente), es el que presenta menos margen de error
+en cuanto a la diferencia entre valores experimentales y valores teóricos. La señal de salida es prácticamente
+igual a la esperada, incluso en este caso, presenta un desfase de cero grados tal cual debe ser. 
+
+\section{Conclusiones}
+Fue posible obtener los valores teóricos de polarización en CD y los parámetros en CA para la topología de fuente
+común con JFETs, comprobando así que la señal de salida en esta topología, presenta un desfase cercano a los $180^\circ$
+con respecto a la señal de entrada, igual a como ocurre con otros transistores.
+
+Al igual que con la topología de drenador común, con fuente común se expusieron los parámetros de polarización en CD
+y el análisis de los valores para las señales de CA. En esta configuración, no existe desfase significativo entre las 
+señales de entrada y salida, según se esperaba. 
+Fue posible obtener los valores teóricos de polarización en CD y los parámetros en CA para la topología de fuente
+común con JFETs, comprobando así que la señal de salida en esta topología, presenta un desfase cercano a los $180^\circ$
+con respecto a la señal de entrada, igual a como ocurre con otros transistores.
+
+Al igual que con la topología de drenador común, con fuente común se expusieron los parámetros de polarización en CD
+y el análisis de los valores para las señales de CA. En esta configuración, no existe desfase significativo entre las 
+señales de entrada y salida, según se esperaba. 
+\appendices
+
+\section{}
+\vspace{-4.5cm}
+\begin{IEEEbiographynophoto}{Matías A. Camacho Abarca}
+        Estudiante del Instituto Tecnológico de Costa Rica en la carrerra de ingeniería en electrónica desde
+        2023. Beneficiario de beca de excelencia académica por el Instituto Tecnológico de
+        Costa Rica desde 2023. Como estudiante, sus
+        intereses incluyen investigación y desarrollo.
+        Correo electrónico: jeacamacho@estudiantec.cr
+\end{IEEEbiographynophoto}
+\vspace{-4.8cm}
+\begin{IEEEbiographynophoto}{Juan P. Elizondo Espinoza}
+        Oriundo de Pérez Zeledón. Realizó sus estudios de secundaria en el SNCCCR, sede UNA Región Brunca, y actualmente cursa la carrera de Ingeniería Electrónica en el Instituto Tecnológico de Costa Rica (TEC). 
+        
+        Anteriormente, fue estudiante de la Universidad de Costa Rica (UCR) durante el año 2022 y participó en programas de estudio en matemática en la Universidad Nacional (UNA) durante los años 2020 y 2021. 
+        
+        Cuenta con preparación y/o experiencia en áreas como:
+        \begin{itemize}
+            \item Arquitectura básica de redes, certificado por CISCO CCNA V7 (ITN), (2021).
+            \item Principios de ciberseguridad, certificado por CISCO Systems, (2022).
+            \item Programa de tutorías estudiantiles, Tecnológico de Costa Rica, (2024).
+        \end{itemize}
+        
+        Correo: juelizondo@estudiantec.cr
+\end{IEEEbiographynophoto}
+
+%%\bibliographystyle{IEEEtran}
+%%\bibliography{literatura}
+
+\begin{thebibliography}{11}
+    \bibitem{Floyd}
+    Thomas L. Floyd, \emph{Dispositivos Electrónicos}, 8ª edición, Pearson, 2008.
+\end{thebibliography}
+%%\bibliographystyle{IEEEtran}
+%%\bibliography{literatura}
+
+\end{document}
