@@ -36,18 +36,13 @@
 
 
 \begin{abstract}
-Este experimento pretendió analizar el comportamiento de dos topologías ya conocidas en amplificadores de señales; pero esta vez haciendo uso de
-transistores de efecto de campo (JFETs). Para llevarlo a cabo, se contruyeron tres circuitos diferentes, el primero con una topología de 
-fuente común, el segundo con una topología de drenador común y el tercero presenta una modificación que consiste en agregar una fuente de corriente.
-Logrando así, analizar el comportamiento de las señales en CD y CA para cada uno de los circuitos. 
-Este experimento pretendió analizar el comportamiento de dos topologías ya conocidas en amplificadores de señales; pero esta vez haciendo uso de
-transistores de efecto de campo (JFETs). Para llevarlo a cabo, se contruyeron tres circuitos diferentes, el primero con una topología de 
-fuente común, el segundo con una topología de drenador común y el tercero presenta una modificación que consiste en agregar una fuente de corriente.
-Logrando así, analizar el comportamiento de las señales en CD y CA para cada uno de los circuitos. 
+    Con este laboratorio se pretendió analizar el comportamiento de los circuitos aplificadores a variaciones de frecuencias extremas, llámese bajas o altas frecuencias. 
+    Con lo cual es posible determinar la respuesta en frecuencia de los circuitos y ver si están correctamente construidos para su propósito principal; en caso contrario,
+    se prueban algunas maneras de corregir el circuito para que cumpla con su función lo más óptimamente posible.
 \end{abstract}
 
 \begin{IEEEkeywords}
-JFETs, polarización, ganancia, tensión, corriente.
+Frecuencia, amplificador, ganancia, respuesta, impedancia.
 \end{IEEEkeywords}
 
 
@@ -55,43 +50,31 @@ JFETs, polarización, ganancia, tensión, corriente.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introducción}
 
-\IEEEPARstart{E}l transistor de efecto de campo, también conocido como JFET, trabaja con una unión PN
-polarizada de manera inversa (con tensiones negativas). Cuando se le aplica un voltaje $V_{\text{DD}}$, se genera 
-una tensión entre el drenaje y la fuente, lo cual induce corriente desde el drenaje hasta la fuente. La forma en la 
-que se controla la cantidad corriente $I_{\text{D}}$ en el transistor, consiste en variar la resistencia del transistor
-al variar el ancho del canal, el cual se modifica debido a la región de empobrecimiento a lo largo de la unión PN;
-dicha región de empobecimiento, aparece al polarizar en inversa las uniones compuerta y fuente ($V_{\text{GS}}$)~\cite{Floyd}.
+\IEEEPARstart{L}a respuesta en frecuencia de un circuito amplificador no es más que el cambio de ganancia o de fase
+en un rango de frecuencias aplicadas en la señal de entrada al circuito; dependiendo de la respuesta en frecuencia, 
+la salida responderá de una forma u otra~\cite{Floyd}.
 
-Cabe aclarar, que en un JFET la corriente de drenaje $I_{\text{D}}$ va disminuyendo conforme la tension $V_{\text{GS}}$ se
-hace cada vez más negativa, pues con esto se ensancha la región de empobrecimiento, hasta que se llega a la tensión 
-de corte en donde el canal se cierra por completo.
+Para lograr obtener la respuesta en frecuencia de un circuito amplificador, se le pueden aplicar algunas pruebas
+como las realizadas en este laboratorio. Es posible calcular los valores de frecuencia de corte inferior y superior 
+para el amplificador, valores que se ven afectados por la capacitancias de acople o bypass en caso de trabajar con bajas
+frecuencias, o bien, por las capactiancias presentes entre las terminales del transistor las cuales se vuelven relevantes 
+cuando el circuito opera a altas frecuencias~\cite{Floyd}.
 
-Con este tipo de transistores, también se pueden construir amplificadores con topologías fuente común y 
-drenador común, bajo una idea muy similar a como se trabaja con transistores MOSFET y BJT. Esto es lo que se pretendió 
-aplicar en el laboratorio; para el caso de los amplificadores de fuente común, la señal de entrada se aplica en la compuerta
-y la salida es tomada directamente desde el drenador del transistor; en el caso de la topología drenador común, lo que cambia
-es que ahora la salida será tomada desde la fuente del transistor~\cite{Floyd}.
-\IEEEPARstart{E}l transistor de efecto de campo, también conocido como JFET, trabaja con una unión PN
-polarizada de manera inversa (con tensiones negativas). Cuando se le aplica un voltaje $V_{\text{DD}}$, se genera 
-una tensión entre el drenaje y la fuente, lo cual induce corriente desde el drenaje hasta la fuente. La forma en la 
-que se controla la cantidad corriente $I_{\text{D}}$ en el transistor, consiste en variar la resistencia del transistor
-al variar el ancho del canal, el cual se modifica debido a la región de empobrecimiento a lo largo de la unión PN;
-dicha región de empobecimiento, aparece al polarizar en inversa las uniones compuerta y fuente ($V_{\text{GS}}$)~\cite{Floyd}.
+En el caso de los transistores BJT (utilizados en este experimento), las capacitancias parásitas se generan por las 
+juntas PN que componen al transistor, por lo que sus efectos están presentes "naturalmente". Dependiendo de dónde se investigue, 
+las capacitancias pueden recibir nombres diferentes, pero entre los más utilizados están $C_{CS}$ para la junta del
+colector y el substrato, $C_{\pi}$ para la junta de la base y el emisor, y $C_{\mu}$ para la unión entre el colector y la base~\cite{Razavi}.
 
-Cabe aclarar, que en un JFET la corriente de drenaje $I_{\text{D}}$ va disminuyendo conforme la tension $V_{\text{GS}}$ se
-hace cada vez más negativa, pues con esto se ensancha la región de empobrecimiento, hasta que se llega a la tensión 
-de corte en donde el canal se cierra por completo.
-
-Con este tipo de transistores, también se pueden construir amplificadores con topologías fuente común y 
-drenador común, bajo una idea muy similar a como se trabaja con transistores MOSFET y BJT. Esto es lo que se pretendió 
-aplicar en el laboratorio; para el caso de los amplificadores de fuente común, la señal de entrada se aplica en la compuerta
-y la salida es tomada directamente desde el drenador del transistor; en el caso de la topología drenador común, lo que cambia
-es que ahora la salida será tomada desde la fuente del transistor~\cite{Floyd}.
+Experimentalmente se puede colocar el circuito a operar en ambos escenarios y recopilar sus frecuencias de corte; para con ello, graficar
+el comportamiento de la ganancia según el rango de frecuencias y validar el funcionamiento del amplificador. Tal es el caso de las
+pruebas experimentales aplicadas en este laboratorio. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Cirtuitos de mediciones}
-Se presenta a continuación los circuitos construidos para la elaboración de este laboratorio. Se montaron 2 circuitos de tal manera que el circuito 1 sirvió para estudiar la respuesta en bajas frecuencias y el circuito 2 para estudiar la respuesta en altas frecuencias. Los transistores utilizados fueron BJTs 2N3904.
+\section{Cirtuitos para las mediciones}
+Se presenta a continuación los circuitos construidos para la elaboración de este laboratorio. 
+Se montaron 2 circuitos de tal manera que el circuito 1 sirvió para estudiar la respuesta en bajas frecuencias y el circuito 2 para estudiar la respuesta en altas frecuencias. 
+Los transistores utilizados fueron BJTs 2N3904.
 Se midieron los parámetros de polarización en corriente directa y parámetros en corriente alterna.
 
 
@@ -133,7 +116,7 @@ Se midieron los parámetros de polarización en corriente directa y parámetros 
             $R_1$ ($\mathrm{k}\Omega$) & $68$  & $67.771~6$ \\
             $R_2$ ($\mathrm{k}\Omega$) & $10$  & $9.925~77$ \\
             $R_L$ ($\mathrm{k}\Omega$) & $10$  & $9.937~73$ \\
-            $R_{E1}$ ($\Omega$) & $10$  & $10.0248$ \\
+            $R_{E1}$ ($\Omega$) & $10$  & $10.024~8$ \\
             $R_{E2}$ ($\Omega$) & $560$  & $555.329$ \\
             \hline
         \end{tabular}
@@ -258,7 +241,7 @@ Es importante que debido al bajo valor de V\textsubscript{ent}, se estimó este 
             $V_C$ ($\mathrm{V}$) & $7.322~96$  & $7.392~27$  \\
             $V_{CE}$ ($\mathrm{V}$) & $6.193~61$  & $6.235~49$  \\
             $I_E$ ($\mathrm{mA}$) & $1.981~31$  & $2.046$ \\ 
-            $|A_v|$  & $111.5449$ & $113.5$  \\
+            $|A_v|$  & $111.544~9$ & $113.5$  \\
             $V_{sal}$ & $1.175~07$  & $1.135$ \\
             \hline
         \end{tabular}
@@ -290,39 +273,25 @@ Para el cálculo de la frecuencia crítica superior general, se modificó la fre
     \end{table}   
 
 \subsection{Análisis de Resultados}
-Con la intención de lograr los mejores resultados posibles, se trató de ajustar los 
-valores reales de los componentes a utilizar, de forma que coincidieran lo más cerca con
-los valores teóricos necesarios, aunque siempre existen ciertas discrepancias.
+En este laboratorio, es de esperar que los resultados experimentales de las mediciones de frecuencia, den algo alejados
+a los valores teóricos calculados, ya que se trata de parámetros sensibles a muchos factores que pueden alterar
+su resultado. 
 
-Para el primer circuito, se observan ciertas diferencias algo significativas entre los valores
-recolectados, con respecto a lo esperado teóricamente; esto en cuanto a parámetros de polarización. 
-Si se observan las señales de entrada y salida en este primer circuito, se puede notar una leve diferencia
-en la señal de salida respecto a lo esperado (es menor al valor teórico); además, en el semiciclo negativo
-existe un recorte en la onda, que provoca una alteración en la ganancia durante ese tiempo, esto se intentó 
-solucionar durante la práctica de laboratorio; no obstante, se debía de bajar considerablemente la señal de entrada.
+En términos generales, para el circuito de análisis a bajas frecuencias. Las frecuencias de corte correspondientes para cada uno
+de los capactirores ($C_1$, $C_2$ y $C_3$) presentaron valores bastante cercanos a lo esperado, con una diferencia de al menos $1.247\%$ 
+y de un $11.648\%$ en el peor de los casos. La frecuencia de corte inferior, se ubicó en un valor que tal como se esperaba, es menor 
+a la aproximación realizada al sumar los tres valores teóricos de frecuencias críticas independientes, ubicándose en los $125.83$ $\mathrm{Hz}$. 
 
-Para el caso de la topología de drenador común, la amplitud de la señal de salida es de un valor muy cercano al teórico, 
-su fase es correcta y en este caso, no presenta recortes extraños que alteren la ganancia. 
+Para el circuito analizado en altas frecuencias, se tiene la frecuencia de corte superior la cual presenta una diferencia del $0.319\%$ 
+respecto a lo esperado de forma teórica, lo cual es bastante bueno considerando lo expuesto al principio de esta sección. 
 
-Por último, el tercer circuito (modificado con una fuente de corriente), es el que presenta menos margen de error
-en cuanto a la diferencia entre valores experimentales y valores teóricos. La señal de salida es prácticamente
-igual a la esperada, incluso en este caso, presenta un desfase de cero grados tal cual debe ser. 
 
 \section{Conclusiones}
-Fue posible obtener los valores teóricos de polarización en CD y los parámetros en CA para la topología de fuente
-común con JFETs, comprobando así que la señal de salida en esta topología, presenta un desfase cercano a los $180^\circ$
-con respecto a la señal de entrada, igual a como ocurre con otros transistores.
+Se logró calcular y medir satisfactoriamente la frecuencia crítica inferior para cada uno de los capacitores del primer circuito, 
+arrojando resultados ceranos a lo esperado; además, fue posible comprobar que la frecuencia crítica general inferior es menor a la 
+aproximación realizada de manera teórica, con un valor de $125.83$ $\mathrm{Hz}$.
 
-Al igual que con la topología de drenador común, con fuente común se expusieron los parámetros de polarización en CD
-y el análisis de los valores para las señales de CA. En esta configuración, no existe desfase significativo entre las 
-señales de entrada y salida, según se esperaba. 
-Fue posible obtener los valores teóricos de polarización en CD y los parámetros en CA para la topología de fuente
-común con JFETs, comprobando así que la señal de salida en esta topología, presenta un desfase cercano a los $180^\circ$
-con respecto a la señal de entrada, igual a como ocurre con otros transistores.
-
-Al igual que con la topología de drenador común, con fuente común se expusieron los parámetros de polarización en CD
-y el análisis de los valores para las señales de CA. En esta configuración, no existe desfase significativo entre las 
-señales de entrada y salida, según se esperaba. 
+Por otro lado, 
 \appendices
 
 \section{}
@@ -356,8 +325,9 @@ señales de entrada y salida, según se esperaba.
 \begin{thebibliography}{11}
     \bibitem{Floyd}
     Thomas L. Floyd, \emph{Dispositivos Electrónicos}, 8ª edición, Pearson, 2008.
+    \bibitem{Razavi}
+    Behzad Razavi, \emph{Fundamentals of Microelectronics}, 2nd edition, Wiley, 2013.
+
 \end{thebibliography}
-%%\bibliographystyle{IEEEtran}
-%%\bibliography{literatura}
 
 \end{document}
