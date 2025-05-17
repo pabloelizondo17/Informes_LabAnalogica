@@ -90,10 +90,8 @@ es que ahora la salida será tomada desde la fuente del transistor~\cite{Floyd}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Cirtuitos amplificadores con JFETs}
-Se presenta a continuación los tres circuitos construidos para la elaboración de este laboratorio. Los transistores utilizados fueron JFETs 2N5458. Al igual que en
-amplificadores con otros tipos de transistores, con JFETs también se añaden capacitores de acople para filtrar
-cualquier valor de CD que se desee eliminar, así como capacitores de bypass para mejorar la ganancia del amplificador.
+\section{Cirtuitos de mediciones}
+Se presenta a continuación los circuitos construidos para la elaboración de este laboratorio. Se montaron 2 circuitos de tal manera que el circuito 1 sirvió para estudiar la respuesta en bajas frecuencias y el circuito 2 para estudiar la respuesta en altas frecuencias. Los transistores utilizados fueron BJTs 2N3904.
 Se midieron los parámetros de polarización en corriente directa y parámetros en corriente alterna.
 
 
@@ -102,14 +100,14 @@ Se midieron los parámetros de polarización en corriente directa y parámetros 
 \begin{figure}[H]
         \centering
         \includegraphics[width=3.4in]{Circuito1.png}
-        \caption{$V_{sal}$ (en azul) obtenido experimentalmente en el circuito 1 durante un periodo}
+        \caption{Circuito 1}
         \label{fig:SignalExperimental_024}
 \end{figure}
 
 \begin{figure}[H]
         \centering
         \includegraphics[width=3.4in]{Circuito2.png}
-        \caption{$V_{sal}$ (en azul) obtenido experimentalmente en el circuito 1 durante un periodo}
+        \caption{Circuito 2}
         \label{fig:SignalExperimental_044}
 \end{figure}
 
@@ -117,6 +115,7 @@ Se midieron los parámetros de polarización en corriente directa y parámetros 
 
 
 \subsection{Resultados}
+
 
 \begin{table}[H]
         \centering
@@ -178,6 +177,11 @@ Se midieron los parámetros de polarización en corriente directa y parámetros 
         \label{tabla3}
     \end{table}   
 
+Para realizar el cálculo de las frecuencias críticas de corte inferior del circuito 1, se procedió a aislar los capacitores de los efectos de los otros capacitores. Por ejemplo, se colocó un capacitor de $1000~\upmu\mathrm{F}$ en paralelo de C\textsubscript{2} y otro sobre C\textsubscript{3}; esto causó que la respuesta en frecuencia de estos capacitores tenga muy poco efecto sobre la salida del amplificador.
+La señal de salida en banda media se ajustó a alrededor de $10~\mathrm{kHz}$ y se ajustó la
+señal para ser observada hasta una caída en la ganancia de $3~\mathrm{dB}$. La frecuencia a la que se dio esa reducción representó la frecuencia crítica inferior debido al capacitor C\textsubscript{1}. El mismo procedimiento
+se realizó para C\textsubscript{2} y C\textsubscript{3}.
+
 \begin{table}[H]
         \centering
         \renewcommand{\arraystretch}{1.5}
@@ -196,7 +200,24 @@ Se midieron los parámetros de polarización en corriente directa y parámetros 
         \label{tabla4}
     \end{table}    
 
+También se calculó el valor de la frecuencia crítica inferior de C\textsubscript{2} si el valor de C\textsubscript{2} fuera modificado a aproximadamente $35.5~\upmu\mathrm{F}$ para conseguir una frecuencia de corte
+general de $300~\mathrm{Hz}$.
 
+\begin{table}[H]
+        \centering
+        \renewcommand{\arraystretch}{1.5}
+        \caption{Frecuencias críticas de corte inferior de $C_2$, bsucando que la frecuencia crítica general inferior sea de $\mathrm{300~Hz}$}
+        \begin{tabular}{ >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm} }
+                \hline
+            Valor calculado de $C_2$ & Valor teórico ($\mathrm{Hz}$) & Valor medido ($\mathrm{Hz}$)\\ 
+            \hline
+            \centering
+            $C_2$ & $196.650~8$  & $209.899$  \\ 
+            \hline
+        \end{tabular}
+        \label{tabla11}
+    \end{table}  
+Es importante que debido al bajo valor de V\textsubscript{ent}, se estimó este como $10~mV$ para ambos circuitos. 
 \begin{table}[H]
         \renewcommand{\arraystretch}{1.5}
         \caption{Mediciones del circuito 1}
@@ -210,7 +231,7 @@ Se midieron los parámetros de polarización en corriente directa y parámetros 
             $V_C$ ($\mathrm{V}$) & $7.59$  & $7.164~76$  \\
             $V_{CE}$ ($\mathrm{V}$) & $6.50$  & $6.007~47$  \\
             $I_E$ ($\mathrm{mA}$) & $1.92$  & $2.047$ \\ 
-            $A_v$  & $109.443$ & $115.5$  \\
+            $|A_v|$  & $109.443$ & $115.5$  \\
             $V_{sal}$ & $1.057$  & $1.155$ \\
             \hline
         \end{tabular}
@@ -220,8 +241,8 @@ Se midieron los parámetros de polarización en corriente directa y parámetros 
 \begin{figure}[H]
         \centering
         \includegraphics[width=3.4in]{OutC1.png}
-        \caption{$V_{sal}$ (en azul) obtenido experimentalmente en el circuito 1 durante un periodo}
-        \label{fig:SignalExperimental_02}
+        \caption{$V_{sal}$ obtenido experimentalmente en el circuito 1 durante un periodo}
+        \label{fig:SignalExperimental_0222}
 \end{figure}
     
 \begin{table}[H]
@@ -237,7 +258,7 @@ Se midieron los parámetros de polarización en corriente directa y parámetros 
             $V_C$ ($\mathrm{V}$) & $7.322~96$  & $7.392~27$  \\
             $V_{CE}$ ($\mathrm{V}$) & $6.193~61$  & $6.235~49$  \\
             $I_E$ ($\mathrm{mA}$) & $1.981~31$  & $2.046$ \\ 
-            $A_v$  & $111.5449$ & $113.5$  \\
+            $|A_v|$  & $111.5449$ & $113.5$  \\
             $V_{sal}$ & $1.175~07$  & $1.135$ \\
             \hline
         \end{tabular}
@@ -247,9 +268,11 @@ Se midieron los parámetros de polarización en corriente directa y parámetros 
 \begin{figure}[H]
         \centering
         \includegraphics[width=3.4in]{OutC2.png}
-        \caption{$V_{sal}$ (en azul) obtenido experimentalmente en el circuito 2 durante un periodo}
+        \caption{$V_{sal}$ obtenido experimentalmente en el circuito 2 durante un periodo}
         \label{fig:SignalExperimental_02}
 \end{figure}
+
+Para el cálculo de la frecuencia crítica superior general, se modificó la frecuencia de la fuente hasta observar una caida de $3~\mathrm{dB}$.
 
 \begin{table}[H]
         \centering
@@ -260,7 +283,7 @@ Se midieron los parámetros de polarización en corriente directa y parámetros 
             Frecuencia & Valor requerido ($\mathrm{kHz}$) & Valor medido ($\mathrm{kHz}$)\\ 
             \hline
             \centering
-            $f_{cu}$ & $k$  & $165.80$  \\ 
+            $f_{cu}$ & $166.331$  & $165.80$  \\ 
             \hline
         \end{tabular}
         \label{tabla7}
