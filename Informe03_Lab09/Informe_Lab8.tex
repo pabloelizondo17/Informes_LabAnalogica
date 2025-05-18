@@ -4,7 +4,6 @@
 %
 \usepackage{instructivo}  
 \graphicspath{{./}{./fig/}}
-
 \usepackage{circuitikz}
 \usepackage{float}
 \usepackage{graphicx}
@@ -82,14 +81,14 @@ Se midieron los parámetros de polarización en corriente directa y parámetros 
 
 \begin{figure}[H]
         \centering
-        \includegraphics[width=3.4in]{Circuito1.png}
+        \includegraphics[width=3.4in]{CIRCUITO1.pdf}
         \caption{Circuito 1}
         \label{fig:SignalExperimental_024}
 \end{figure}
 
 \begin{figure}[H]
         \centering
-        \includegraphics[width=3.4in]{Circuito2.png}
+        \includegraphics[width=3.4in]{CIRCUITO2.pdf}
         \caption{Circuito 2}
         \label{fig:SignalExperimental_044}
 \end{figure}
@@ -260,12 +259,14 @@ Para el cálculo de la frecuencia crítica superior general, se modificó la fre
 \begin{table}[H]
         \centering
         \renewcommand{\arraystretch}{1.5}
-        \caption{Frecuencias crítica superior general, circuito 2}
+        \caption{Frecuencias críticas superiores, circuito 2}
         \begin{tabular}{ >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm} }
                 \hline
-            Frecuencia & Valor requerido ($\mathrm{kHz}$) & Valor medido ($\mathrm{kHz}$)\\ 
+            Frecuencia & Valor teórico ($\mathrm{kHz}$) & Valor experimental ($\mathrm{kHz}$)\\ 
             \hline
             \centering
+            $f_{c(ent)}$ & $298.853$  & $296.716$  \\
+            $f_{c(sal)}$ & $282.357$  & $281.321$  \\
             $f_{cu}$ & $166.331$  & $165.80$  \\ 
             \hline
         \end{tabular}
@@ -290,8 +291,7 @@ respecto a lo esperado de forma teórica, lo cual es bastante bueno considerando
 Se logró calcular y medir satisfactoriamente la frecuencia crítica inferior para cada uno de los capacitores del primer circuito, 
 arrojando resultados ceranos a lo esperado; además, fue posible comprobar que la frecuencia crítica general inferior es menor a la 
 aproximación realizada de manera teórica, con un valor de $125.83$ $\mathrm{Hz}$.
-
-Por otro lado, 
+En cuanto al segundo circuito, se logró calcular y medir las frecuencias críticas superiores, obteniendo valores con muy poco porcentaje de error, así como una frecuencia crítica general superior menor que la frecuencia crítica superior de entrada y que la frecuencia crítica superior de salida.
 \appendices
 
 \section{}
